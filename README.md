@@ -1,16 +1,20 @@
 # ConceptCLIP: Towards Trustworthy Medical AI via Concept-Enhanced Language-Image Pre-training
-ConceptCLIP is a large-scale, pre-trained CLIP model designed for diverse medical image modalities.
+ConceptCLIP is a large-scale, pre-training vision-language model designed for diverse medical image modalities.
 
 [🤗Model on Hugging Face](https://huggingface.co/JerrryNie/ConceptCLIP) 
 
 ## Overview
+<div style="text-align: center;">
+    <img src="overview.png" alt="Description of Image" style="max-width: 100%; height: auto;">
+</div>
+
 **ConceptCLIP** enhances language-image pre-training with medical concepts, enabling it to handle various image modalities across multiple tasks.
 
 **Authors:** Yuxiang Nie*, Sunan He*, Yequan Bie*, Yihui Wang, Zhixuan Chen, Shu Yang, Hao Chen**
 (*Equal Contribution, **Corresponding author)
 
 ## News
-- [01/25]🔥We released ConceptCLIP, a pre-trained model for medical language-image tasks with concept enhancements. Explore our [paper](arxiv) and [model](https://huggingface.co/JerrryNie/ConceptCLIP).
+- [01/25]🔥We released ConceptCLIP, a pre-training model for medical vision-language tasks with concept enhancements. Explore our [paper](arxiv) and [model](https://huggingface.co/JerrryNie/ConceptCLIP).
 
 ## Environment
 ConceptCLIP is built on [OpenCLIP](https://github.com/mlfoundations/open_clip). Follow the [requirements.txt](https://github.com/mlfoundations/open_clip/blob/main/requirements.txt) to set up your environment.
