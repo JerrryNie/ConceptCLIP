@@ -1,4 +1,4 @@
-# ConceptCLIP: Towards Trustworthy Medical AI via Concept-Enhanced Language-Image Pre-training
+# ConceptCLIP: Towards Trustworthy Medical AI via Concept-Enhanced Contrastive Language-Image Pre-training
 ConceptCLIP is a large-scale, pre-training vision-language model designed for diverse medical image modalities.
 
 [🤗Model on Hugging Face](https://huggingface.co/JerrryNie/ConceptCLIP) 
@@ -55,9 +55,9 @@ This project is based on [OpenCLIP](https://github.com/mlfoundations/open_clip).
 If you use this code for your research or project, please cite:
 ```bib
 @article{nie2025conceptclip,
-  title={{ConceptCLIP: Towards Trustworthy Medical AI via Concept-Enhanced Language-Image Pre-training}},
+  title={{ConceptCLIP: Towards Trustworthy Medical AI via Concept-Enhanced Contrastive Language-Image Pre-training}},
   author={Nie, Yuxiang and He, Sunan and Bie, Yequan and Wang, Yihui and Chen, Zhixuan and Yang, Shu and Chen, Hao},
-  journal={arXiv preprint arXiv:2501.xxxxx},
+  journal={arXiv preprint arXiv:2501.15579},
   year={2025}
 }
 ```
