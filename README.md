@@ -14,7 +14,7 @@ ConceptCLIP is a large-scale, pre-training vision-language model designed for di
 (*Equal Contribution, **Corresponding author)
 
 ## News
-- [01/25]🔥We released ConceptCLIP, a pre-training model for medical vision-language tasks with concept enhancements. Explore our [paper](arxiv) and [model](https://huggingface.co/JerrryNie/ConceptCLIP).
+- [01/25]🔥We released ConceptCLIP, a pre-training model for medical vision-language tasks with concept enhancements. Explore our [paper](https://arxiv.org/abs/2501.15579) and [model](https://huggingface.co/JerrryNie/ConceptCLIP).
 
 ## Environment
 ConceptCLIP is built on [OpenCLIP](https://github.com/mlfoundations/open_clip). Follow the [requirements.txt](https://github.com/mlfoundations/open_clip/blob/main/requirements.txt) to set up your environment.
