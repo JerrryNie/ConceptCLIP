@@ -40,7 +40,7 @@ dataset_dir = 'example_data/'
 imgs = [Image.open(os.path.join(dataset_dir, img)).convert('RGB') for img in test_imgs]
 inputs = processor(images=imgs, text=[template + l for l in labels], return_tensors='pt', padding=True, truncation=True)
 with torch.no_grad():
-    res = model(image=inputs['pixel_values'].to(device), text=inputs['input_ids'].to(device))
+    res = model(**inputs)
     image_features = res['image_features']
     image_token_features = res['image_token_features']
     text_features = res['text_features']
