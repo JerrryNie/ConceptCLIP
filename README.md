@@ -26,25 +26,26 @@ from transformers import AutoModel, AutoProcessor
 import torch
 from PIL import Image
 
-# Load model and processor
-model_name = 'JerrryNie/ConceptCLIP'
-model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
-processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+model = AutoModel.from_pretrained('JerrryNie/ConceptCLIP', trust_remote_code=True)
+processor = AutoProcessor.from_pretrained('JerrryNie/ConceptCLIP', trust_remote_code=True)
 
-# Define a single image and a few labels
 image = Image.open('example_data/chest_X-ray.jpg').convert('RGB')
-labels = ['chest X-ray', 'brain MRI', 'pie chart']
+labels = ['chest X-ray', 'brain MRI', 'skin lesion']
+texts = [f'a medical image of {label}' for label in labels]
 
-# Process inputs
-inputs = processor(images=image, text=['a medical image of ' + label for label in labels], return_tensors='pt', padding=True, truncation=True).to(model.device)
+inputs = processor(
+    images=image, 
+    text=texts,
+    return_tensors='pt',
+    padding=True,
+    truncation=True
+).to(model.device)
 
-# Perform inference
 with torch.no_grad():
-    outputs = model(image=inputs['pixel_values'], text=inputs['input_ids'])
+    outputs = model(**inputs)
     logits = (outputs['logit_scale'] * outputs['image_features'] @ outputs['text_features'].t()).softmax(dim=-1)[0]
 
-# Print results
-print({label: logits[i].item() for i, label in enumerate(labels)})
+print({label: f"{prob:.2%}" for label, prob in zip(labels, logits)})
 ```
 For more detailed usage, refer to `usage.py`.
 
