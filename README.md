@@ -291,3 +291,15 @@ python other_scripts/check_duplicates.py pretraining_hashes.csv evaluation_hashe
   - If duplicates are found, a detailed report is saved to `duplicates_report.csv` (or the file specified by `--output`).
   - Each row in the report contains the shared `Hash`, the `Evaluation_Image_Path`, and the corresponding `Pretraining_Image_Path`.
 
+## Citation
+
+If you find ConceptCLIP useful in your research, please cite our paper:
+
+```bibtex
+@article{nie2025conceptclip,
+  title={An Explainable Biomedical Foundation Model via Large-Scale Concept-Enhanced Vision-Language Pre-training},
+  author={Nie, Yuxiang and He, Sunan and Bie, Yequan and Wang, Yihui and Chen, Zhixuan and Yang, Shu and Cai, Zhiyuan and Wang, Hongmei and Wang, Xi and Luo, Luyang and Wu, Mingxiang and Wu, Xian and Chan, Ronald Cheong Kin and Lau, Yuk Ming and Zheng, Yefeng and Rajpurkar, Pranav and Chen, Hao},
+  journal={arXiv preprint arXiv:2501.15579},
+  year={2025},
+  doi={10.48550/arXiv.2501.15579}
+}
