@@ -1,0 +1,10 @@
+*cache*
+*logs/
+downstream_evaluation/visual_question_answering/data/001_Slake1.0
+downstream_evaluation/medical_image_diagnosis/data/images/011_SIIM-ACR
+pre_training/src/pretrained_checkpoint/ConceptCLIP
+*.zip
+__MACOSX
+*.pth
+*.DS_Store
+downstream_evaluation/medical_report_generation/utils/pycocoevalcap

@@ -1,0 +1,396 @@
+case_num,diagnosis,seven_point_score,pigment_network,streaks,pigmentation,regression_structures,dots_and_globules,blue_whitish_veil,vascular_structures,level_of_diagnostic_difficulty,elevation,location,sex,management,clinic,derm
+7,basal cell carcinoma,0,0,0,0,0,0,0,1,high,nodular,back,male,excision,NEL/Nel040.jpg,NEL/Nel041.jpg
+9,basal cell carcinoma,0,0,0,0,0,0,0,1,low,nodular,back,female,excision,NEL/Nel086.jpg,NEL/Nel087.jpg
+16,basal cell carcinoma,0,0,0,0,0,0,0,0,low,palpable,head neck,male,excision,NEL/Nel101.jpg,NEL/Nel100.jpg
+35,basal cell carcinoma,2,0,0,0,1,1,0,1,medium,palpable,back,male,excision,FDL/Fdl069.jpg,FDL/Fdl070.jpg
+42,basal cell carcinoma,0,0,0,0,0,0,0,0,high,nodular,head neck,male,excision,Fhl/Fhl051.jpg,Fhl/Fhl052.jpg
+43,blue nevus,0,0,0,1,0,0,0,0,low,nodular,acral,female,no further examination,NFL/Nfl039.jpg,NFL/Nfl040.jpg
+54,blue nevus,1,0,0,1,0,0,0,0,medium,palpable,chest,male,excision,Ael/Ael441.jpg,Ael/Ael442.jpg
+56,blue nevus,1,0,0,1,0,0,0,0,medium,flat,head neck,female,excision,Ael/Ael445.jpg,Ael/Ael446.jpg
+65,blue nevus,1,0,0,1,0,0,0,0,medium,palpable,upper limbs,female,excision,FCL/FCL087.JPG,FCL/Fcl088.jpg
+71,clark nevus,1,1,0,0,1,1,0,0,medium,palpable,back,female,excision,NDL/Ndl006.jpg,NDL/Ndl005.jpg
+72,clark nevus,0,1,0,0,0,0,0,0,low,flat,lower limbs,female,clinical follow up,NBL/Nbl075.jpg,NBL/Nbl076.jpg
+90,clark nevus,2,0,0,0,1,1,0,0,high,palpable,back,male,excision,NCL/Ncl054.jpg,NCL/Ncl053.jpg
+104,clark nevus,3,1,0,1,0,1,0,1,medium,flat,back,male,excision,NDL/Ndl023.jpg,NDL/Ndl022.jpg
+127,clark nevus,2,1,1,0,1,1,0,1,medium,palpable,chest,female,excision,NIL/Nil001.jpg,NIL/Nil002.jpg
+139,clark nevus,2,0,1,1,0,0,0,0,high,flat,acral,female,excision,NIL/Nil047.jpg,NIL/Nil048.jpg
+146,clark nevus,0,1,0,0,0,1,0,0,low,flat,lower limbs,male,clinical follow up,NLL/Nll019.jpg,NLL/Nll020.jpg
+147,clark nevus,2,1,0,0,0,1,0,0,medium,flat,upper limbs,female,excision,NLL/Nll021.jpg,NLL/nll022.jpg
+168,clark nevus,2,1,0,0,1,1,0,0,medium,palpable,abdomen,female,clinical follow up,NML/Nml007.jpg,NML/Nml008.jpg
+178,clark nevus,0,0,1,0,0,1,0,0,low,flat,acral,female,clinical follow up,A2l/Abl111.jpg,A2l/Abl112.jpg
+206,clark nevus,2,0,1,0,0,1,0,0,medium,flat,acral,male,clinical follow up,A1l/Aal087.jpg,A1l/Aal088.jpg
+207,clark nevus,0,0,1,0,0,0,0,0,low,flat,acral,male,clinical follow up,A1l/Aal089.jpg,A1l/Aal090.jpg
+208,clark nevus,0,0,1,0,0,0,0,0,low,flat,acral,male,clinical follow up,A1l/Aal093.jpg,A1l/Aal094.jpg
+216,clark nevus,1,1,0,0,0,1,0,0,medium,flat,back,female,excision,A2l/Abl190.jpg,A2l/Abl191.jpg
+220,clark nevus,0,0,0,1,0,1,0,0,low,palpable,chest,male,clinical follow up,A3l/Acl282.jpg,A3l/Acl283.jpg
+231,clark nevus,1,1,0,1,0,1,0,0,medium,palpable,back,male,clinical follow up,A2l/Abl144.jpg,A2l/Abl145.jpg
+254,clark nevus,0,1,0,0,0,1,0,0,low,flat,abdomen,female,clinical follow up,A3l/Acl258.jpg,A3l/Acl259.jpg
+264,clark nevus,3,1,1,0,1,1,0,0,high,flat,abdomen,male,excision,Adl/Adl345.jpg,Adl/Adl346.jpg
+279,clark nevus,2,1,1,1,0,1,0,0,high,palpable,abdomen,female,excision,Ael/Ael516.jpg,Ael/Ael517.jpg
+280,clark nevus,2,1,1,0,0,1,0,0,medium,flat,buttocks,male,excision,Ael/Ael522.jpg,Ael/Ael523.jpg
+281,clark nevus,0,1,0,0,0,1,0,0,low,flat,back,female,clinical follow up,Ael/Ael524.jpg,Ael/Ael525.jpg
+285,clark nevus,0,1,0,0,0,1,0,0,medium,palpable,back,male,clinical follow up,Gzl/gzl61.jpg,Gzl/gzl62.jpg
+290,clark nevus,0,1,0,0,0,0,0,0,medium,flat,back,male,clinical follow up,Gzl/gzl79.jpg,Gzl/gzl80.jpg
+292,clark nevus,3,1,0,0,0,1,0,0,medium,flat,back,female,excision,Gzl/gzl85.jpg,Gzl/gzl86.jpg
+299,clark nevus,5,1,1,0,1,1,0,0,high,palpable,back,male,excision,Gal/Gal015.jpg,Gal/Gal016.jpg
+303,clark nevus,0,1,0,1,0,1,0,0,low,flat,back,male,clinical follow up,Gal/Gal048.jpg,Gal/Gal049.jpg
+308,clark nevus,2,1,1,1,0,1,0,0,medium,flat,abdomen,female,excision,Gal/Gal151.jpg,Gal/Gal152.jpg
+322,clark nevus,2,1,0,0,1,1,0,0,medium,palpable,chest,female,excision,FBL/FBL003.JPG,FBL/Fbl004.jpg
+336,clark nevus,3,1,0,0,1,1,0,1,medium,palpable,chest,male,excision,FBL/Fbl055.jpg,FBL/Fbl056.jpg
+338,clark nevus,1,1,1,1,0,1,0,0,medium,flat,abdomen,female,clinical follow up,FBL/Fbl063.jpg,FBL/Fbl064.jpg
+339,clark nevus,2,0,1,1,0,1,0,0,high,palpable,upper limbs,female,excision,FBL/Fbl067.jpg,FBL/Fbl068.jpg
+340,clark nevus,2,1,0,0,1,1,0,0,high,flat,lower limbs,male,excision,FBL/FBL071.JPG,FBL/Fbl072.jpg
+348,clark nevus,2,1,0,1,0,1,0,0,high,palpable,lower limbs,female,excision,FBL/Fbl097.jpg,FBL/Fbl098.jpg
+349,clark nevus,0,1,0,1,0,0,0,0,medium,flat,back,male,clinical follow up,Fll/Fll034.jpg,Fll/Fll035.jpg
+352,clark nevus,1,0,1,1,0,1,0,0,medium,palpable,back,female,excision,FCL/Fcl009.jpg,FCL/Fcl010.jpg
+364,clark nevus,0,1,0,1,0,1,0,0,medium,palpable,back,male,clinical follow up,Fll/Fll042.jpg,Fll/Fll043.jpg
+382,clark nevus,0,1,0,0,0,1,0,0,low,palpable,back,male,clinical follow up,FEL/Fel051.jpg,FEL/Fel052.jpg
+409,clark nevus,1,1,0,0,1,1,0,0,medium,flat,head neck,female,clinical follow up,FDL/Fdl029.jpg,FDL/Fdl030.jpg
+443,clark nevus,1,1,0,0,1,1,0,0,medium,flat,back,male,clinical follow up,Fhl/Fhl041.jpg,Fhl/Fhl042.jpg
+454,clark nevus,0,1,0,0,0,1,0,0,medium,flat,abdomen,male,clinical follow up,Fhl/Fhl085.jpg,Fhl/Fhl086.jpg
+465,clark nevus,2,1,0,0,1,1,0,0,high,flat,abdomen,female,excision,Fml/Fml019.jpg,Fml/Fml020.jpg
+471,combined nevus,2,0,0,0,0,1,1,0,medium,palpable,abdomen,male,excision,NFL/Nfl033.jpg,NFL/Nfl034.jpg
+483,congenital nevus,2,1,0,0,1,1,0,0,medium,palpable,lower limbs,female,excision,NCL/Ncl026.jpg,NCL/Ncl027.jpg
+505,dermal nevus,0,1,0,0,0,0,0,0,low,palpable,head neck,female,no further examination,NLL/Nll039.jpg,NLL/Nll040.jpg
+511,dermal nevus,0,0,0,0,0,1,0,0,low,nodular,head neck,female,no further examination,NLL/Nll087.jpg,NLL/Nll088.jpg
+528,dermal nevus,0,0,0,0,0,0,0,1,low,nodular,head neck,female,no further examination,Ggl/Ggl041.jpg,Ggl/Ggl042.jpg
+542,dermatofibroma,1,1,0,0,0,1,0,0,medium,palpable,buttocks,female,excision,A3l/Acl232.jpg,A3l/Acl233.jpg
+549,dermatofibroma,0,1,0,0,0,1,0,1,low,palpable,upper limbs,female,no further examination,Ggl/Ggl047.jpg,Ggl/Ggl048.jpg
+562,lentigo,1,1,0,0,0,1,0,0,low,flat,head neck,female,clinical follow up,Gal/Gal170.jpg,Gal/Gal171.jpg
+563,lentigo,0,1,0,0,0,0,0,0,low,flat,back,female,no further examination,Ggl/Ggl069.jpg,Ggl/Ggl070.jpg
+576,lentigo,0,1,0,1,0,0,0,0,low,flat,upper limbs,male,no further examination,New/newl025.jpg,New/newl026.jpg
+590,melanoma (in situ),5,1,1,1,0,1,0,0,low,flat,head neck,female,excision,NAL/Nal089.jpg,NAL/Nal090.jpg
+591,melanoma (in situ),4,1,0,0,1,1,0,0,medium,flat,head neck,male,excision,NAL/Nal051.jpg,NAL/Nal052.jpg
+596,melanoma (in situ),3,1,0,1,0,1,0,0,high,flat,abdomen,male,excision,NBL/Nbl012.jpg,NBL/Nbl013.jpg
+619,melanoma (in situ),3,1,0,0,1,1,0,0,medium,flat,upper limbs,female,excision,FBL/Fbl027.jpg,FBL/Fbl028.jpg
+637,melanoma (in situ),4,1,1,1,0,0,0,0,low,flat,buttocks,female,excision,Fll/Fll121.jpg,Fll/Fll122.jpg
+649,melanoma (less than 0.76 mm),6,1,1,1,1,1,0,1,low,palpable,back,female,excision,NAL/Nal065.jpg,NAL/Nal064.jpg
+656,melanoma (less than 0.76 mm),4,1,1,0,0,1,1,0,low,palpable,back,female,excision,NBL/Nbl005.jpg,NBL/Nbl006.jpg
+657,melanoma (less than 0.76 mm),8,1,1,1,1,1,1,0,low,palpable,chest,male,excision,NBL/Nbl018.jpg,NBL/Nbl017.jpg
+688,melanoma (less than 0.76 mm),5,0,1,1,0,1,1,0,high,flat,lower limbs,female,excision,Adl/Adl304.jpg,Adl/Adl305.jpg
+689,melanoma (less than 0.76 mm),6,1,1,1,1,1,0,1,high,palpable,back,male,excision,Adl/Adl312.jpg,Adl/Adl313.jpg
+702,melanoma (less than 0.76 mm),5,1,1,1,0,1,1,0,low,palpable,upper limbs,male,excision,FAL/Fal065.jpg,FAL/FAL066.JPG
+705,melanoma (less than 0.76 mm),5,1,1,0,0,0,1,0,high,flat,back,male,excision,FBL/Fbl049.jpg,FBL/Fbl050.jpg
+708,melanoma (less than 0.76 mm),2,0,0,0,1,1,0,0,high,palpable,lower limbs,female,excision,FBL/Fbl081.jpg,FBL/Fbl082.jpg
+721,melanoma (less than 0.76 mm),5,1,1,0,0,0,1,0,medium,flat,lower limbs,female,excision,Gdl/Gdl013.jpg,Gdl/Gdl014.jpg
+732,melanoma (less than 0.76 mm),6,1,1,1,1,1,0,1,low,flat,lower limbs,male,excision,Fll/Fll115.jpg,Fll/Fll116.jpg
+744,melanoma (0.76 to 1.5 mm),4,1,0,1,0,1,1,0,low,nodular,lower limbs,male,excision,NAL/Nal009.jpg,NAL/Nal008.jpg
+766,melanoma (0.76 to 1.5 mm),10,1,1,1,1,1,1,1,low,nodular,abdomen,male,excision,Gzl/gzl25.jpg,Gzl/gzl26.jpg
+780,melanoma (0.76 to 1.5 mm),5,0,1,1,0,1,1,0,low,palpable,back,male,excision,Gcl/Gcl057.jpg,Gcl/Gcl058.jpg
+786,melanoma (0.76 to 1.5 mm),8,1,1,1,1,1,0,1,medium,nodular,back,male,excision,Ggl/Ggl053.jpg,Ggl/Ggl054.jpg
+791,melanoma (0.76 to 1.5 mm),4,1,0,1,0,1,1,0,low,nodular,lower limbs,female,excision,Fll/Fll127.jpg,Fll/Fll128.jpg
+812,melanoma (more than 1.5 mm),6,0,0,1,0,1,1,1,high,nodular,abdomen,female,excision,Ael/Ael513.jpg,Ael/Ael514.jpg
+831,melanosis,0,0,1,0,0,0,0,0,low,flat,head neck,female,clinical follow up,Gzl/gzl71.jpg,Gzl/gzl72.jpg
+846,miscellaneous,5,0,1,0,1,1,0,1,high,palpable,chest,female,excision,FFL/Ffl025.jpg,FFL/Ffl026.jpg
+862,reed or spitz nevus,5,1,1,0,1,1,0,0,high,palpable,lower limbs,male,excision,NCL/Ncl033.jpg,NCL/Ncl032.jpg
+866,reed or spitz nevus,0,0,1,1,0,1,0,0,medium,palpable,head neck,male,excision,NDL/Ndl045.jpg,NDL/Ndl046.jpg
+867,reed or spitz nevus,6,1,1,1,0,1,1,0,high,palpable,buttocks,female,excision,NDL/NDL049.JPG,NDL/Ndl050.jpg
+872,reed or spitz nevus,6,1,1,0,0,1,1,0,high,palpable,buttocks,female,excision,NDL/Ndl059.jpg,NDL/Ndl060.jpg
+890,reed or spitz nevus,4,1,1,1,0,1,0,0,high,palpable,lower limbs,female,excision,NIL/Nil028.jpg,NIL/Nil029.jpg
+901,reed or spitz nevus,6,1,1,1,0,1,1,0,high,flat,lower limbs,male,excision,Ael/Ael420.jpg,Ael/Ael421.jpg
+904,reed or spitz nevus,0,0,0,0,0,1,0,0,medium,palpable,back,male,clinical follow up,A3l/Acl294.jpg,A3l/Acl295.jpg
+920,reed or spitz nevus,5,0,0,0,0,1,1,1,medium,palpable,upper limbs,male,excision,FBL/Fbl039.jpg,FBL/Fbl040.jpg
+926,reed or spitz nevus,6,1,1,1,0,1,1,0,medium,palpable,lower limbs,male,clinical follow up,FFL/Ffl083.jpg,FFL/Ffl084.jpg
+936,reed or spitz nevus,2,0,0,0,0,1,0,1,high,palpable,lower limbs,female,excision,New/newl038.jpg,New/newl039.jpg
+940,seborrheic keratosis,1,0,0,1,0,1,0,1,medium,palpable,back,female,no further examination,NFL/Nfl007.jpg,NFL/Nfl008.jpg
+943,seborrheic keratosis,1,0,0,1,0,1,0,0,low,nodular,abdomen,female,no further examination,NFL/NFL013.JPG,NFL/Nfl014.jpg
+952,seborrheic keratosis,2,1,0,1,0,1,0,0,high,palpable,back,male,excision,A3l/Acl226.jpg,A3l/Acl227.jpg
+954,seborrheic keratosis,0,0,0,1,0,1,0,0,medium,palpable,abdomen,female,excision,A3l/Acl260.jpg,A3l/Acl261.jpg
+957,seborrheic keratosis,2,1,0,0,0,0,0,0,medium,palpable,abdomen,female,no further examination,Ael/Ael487.jpg,Ael/Ael488.jpg
+959,seborrheic keratosis,1,0,0,1,0,0,0,0,low,nodular,chest,male,no further examination,Gzl/gzl17.jpg,Gzl/gzl18.jpg
+968,seborrheic keratosis,1,0,0,1,0,0,0,0,medium,palpable,head neck,male,no further examination,FDL/Fdl031.jpg,FDL/Fdl032.jpg
+983,vascular lesion,0,0,0,1,0,0,0,0,low,nodular,head neck,female,no further examination,NEL/Nel054.jpg,NEL/NEL055.JPG
+1000,vascular lesion,0,0,0,1,0,0,0,0,low,flat,acral,male,no further examination,Ael/Ael458.jpg,Ael/Ael459.jpg
+1009,vascular lesion,0,0,0,0,0,0,0,0,high,nodular,head neck,male,clinical follow up,Fil/Fil081.jpg,Fil/Fil082.jpg
+4,basal cell carcinoma,4,0,0,0,1,1,1,1,low,palpable,lower limbs,male,excision,NEL/NEL034.JPG,NEL/Nel035.jpg
+11,basal cell carcinoma,3,0,0,0,0,1,1,1,medium,nodular,head neck,female,excision,NEL/NEL090.JPG,NEL/Nel091.jpg
+21,basal cell carcinoma,1,0,0,0,0,1,0,0,high,palpable,upper limbs,female,excision,NML/Nml101.jpg,NML/Nml102.jpg
+24,basal cell carcinoma,0,0,0,0,0,0,0,1,medium,palpable,head neck,female,excision,Adl/Adl378.jpg,Adl/Adl379.jpg
+36,basal cell carcinoma,0,0,0,0,0,0,0,1,medium,palpable,back,male,excision,Ggl/Ggl027.jpg,Ggl/Ggl028.jpg
+39,basal cell carcinoma,2,0,0,1,0,1,0,1,high,palpable,upper limbs,female,excision,Fgl/Fgl080.jpg,Fgl/Fgl088.jpg
+41,basal cell carcinoma,2,0,0,0,1,1,0,0,medium,nodular,head neck,female,excision,Fhl/Fhl049.jpg,Fhl/Fhl050.jpg
+53,blue nevus,1,0,0,1,0,0,0,0,medium,palpable,upper limbs,male,excision,Adl/Adl324.jpg,Adl/Adl325.jpg
+62,blue nevus,1,0,1,1,0,0,0,0,medium,palpable,back,female,excision,Gzl/gzl41.jpg,Gzl/gzl42.jpg
+74,clark nevus,1,1,1,0,0,0,0,0,high,palpable,lower limbs,female,excision,NBL/Nbl085.jpg,NBL/Nbl086.jpg
+84,clark nevus,1,1,0,0,1,0,0,0,medium,flat,back,female,excision,NCL/Ncl031.jpg,NCL/Ncl030.jpg
+87,clark nevus,1,1,0,0,0,1,0,0,medium,flat,abdomen,female,clinical follow up,NCL/Ncl047.jpg,NCL/Ncl048.jpg
+91,clark nevus,1,1,0,0,1,1,0,0,medium,palpable,chest,male,excision,NCL/Ncl055.jpg,NCL/Ncl056.jpg
+97,clark nevus,1,1,0,1,0,1,0,0,low,flat,abdomen,male,clinical follow up,NCL/Ncl084.jpg,NCL/Ncl083.jpg
+107,clark nevus,4,0,0,0,1,1,1,0,high,palpable,back,female,excision,NDL/Ndl029.jpg,NDL/Ndl028.jpg
+135,clark nevus,2,0,0,0,1,1,0,0,medium,flat,chest,female,excision,NIL/Nil034.jpg,NIL/Nil035.jpg
+137,clark nevus,1,0,1,0,0,1,0,0,medium,flat,acral,female,clinical follow up,NIL/Nil042.jpg,NIL/Nil043.jpg
+144,clark nevus,1,1,0,0,0,1,0,0,low,flat,abdomen,male,clinical follow up,NLL/Nll015.jpg,NLL/Nll016.jpg
+152,clark nevus,0,0,0,0,0,1,0,0,low,flat,abdomen,male,clinical follow up,NLL/Nll041.jpg,NLL/Nll042.jpg
+162,clark nevus,1,1,0,0,1,1,0,0,medium,flat,abdomen,male,clinical follow up,NLL/Nll097.jpg,NLL/Nll098.jpg
+172,clark nevus,1,1,0,1,0,0,0,0,low,flat,back,female,clinical follow up,NML/Nml033.jpg,NML/Nml034.jpg
+173,clark nevus,1,1,0,0,1,1,0,0,medium,palpable,back,male,excision,NML/Nml084.jpg,NML/Nml085.jpg
+179,clark nevus,0,0,1,0,0,1,0,0,low,flat,acral,female,clinical follow up,A2l/Abl115.jpg,A2l/Abl116.jpg
+183,clark nevus,1,0,0,0,1,1,0,0,low,flat,lower limbs,male,clinical follow up,A2l/Abl126.jpg,A2l/Abl127.jpg
+196,clark nevus,0,0,1,0,0,0,0,0,low,flat,acral,female,clinical follow up,A1l/Aal043.jpg,A1l/Aal044.jpg
+201,clark nevus,1,0,1,1,0,1,0,0,medium,flat,acral,male,excision,A1l/Aal061.jpg,A1l/Aal062.jpg
+225,clark nevus,0,1,0,0,0,1,0,0,low,palpable,head neck,female,clinical follow up,Ael/Ael447.jpg,Ael/Ael448.jpg
+228,clark nevus,2,1,1,1,0,1,0,0,high,flat,back,male,excision,A1l/Aal009.jpg,A1l/Aal010.jpg
+244,clark nevus,0,1,0,0,0,1,0,0,low,flat,buttocks,female,clinical follow up,A2l/Abl176.jpg,A2l/Abl177.jpg
+251,clark nevus,2,1,0,0,0,0,0,1,medium,palpable,back,female,excision,A3l/Acl234.jpg,A3l/Acl235.jpg
+253,clark nevus,0,1,0,0,0,0,0,0,low,flat,chest,male,clinical follow up,A3l/Acl240.jpg,A3l/Acl241.jpg
+263,clark nevus,4,1,0,0,0,1,0,1,medium,flat,back,female,excision,Adl/Adl339.jpg,Adl/Adl340.jpg
+269,clark nevus,0,1,0,0,0,1,0,0,low,flat,abdomen,female,clinical follow up,Adl/Adl370.jpg,Adl/Adl371.jpg
+271,clark nevus,2,1,0,1,0,1,0,0,medium,palpable,lower limbs,male,clinical follow up,Ael/Ael418.jpg,Ael/Ael419.jpg
+274,clark nevus,0,1,0,0,0,1,0,0,low,flat,abdomen,male,clinical follow up,Ael/Ael432.jpg,Ael/Ael433.jpg
+276,clark nevus,2,1,0,0,0,1,0,1,low,flat,chest,female,clinical follow up,Ael/Ael466.jpg,Ael/Ael467.jpg
+283,clark nevus,0,1,0,1,0,1,0,0,low,flat,back,female,clinical follow up,Gzl/gzl55.jpg,Gzl/gzl56.jpg
+314,clark nevus,2,1,0,1,0,1,0,0,medium,palpable,back,female,excision,FAL/Fal043.jpg,FAL/FAL044.JPG
+320,clark nevus,1,1,0,1,0,1,0,0,low,palpable,lower limbs,female,clinical follow up,FAL/Fal099.jpg,FAL/Fal100.jpg
+331,clark nevus,0,1,0,0,0,1,0,0,low,flat,lower limbs,female,clinical follow up,FBL/Fbl035.jpg,FBL/Fbl036.jpg
+343,clark nevus,2,1,0,0,1,1,0,0,medium,flat,back,female,clinical follow up,FBL/Fbl079.jpg,FBL/Fbl080.jpg
+350,clark nevus,0,1,0,1,0,1,0,0,low,flat,back,male,clinical follow up,Fll/Fll036.jpg,Fll/Fll037.jpg
+366,clark nevus,3,1,1,0,0,1,0,0,high,palpable,back,male,excision,FCL/Fcl049.jpg,FCL/Fcl050.jpg
+372,clark nevus,0,1,0,0,0,1,0,0,medium,palpable,abdomen,male,clinical follow up,FCL/FCL089.JPG,FCL/Fcl090.jpg
+386,clark nevus,2,1,0,1,0,1,0,0,high,palpable,back,male,excision,FEL/Fel071.jpg,FEL/Fel072.jpg
+391,clark nevus,1,1,0,1,0,1,0,1,medium,palpable,abdomen,female,excision,FEL/Fel095.jpg,FEL/Fel096.jpg
+405,clark nevus,0,1,0,0,0,1,0,0,low,palpable,lower limbs,female,clinical follow up,FDL/Fdl001.jpg,FDL/Fdl002.jpg
+411,clark nevus,1,1,0,1,0,1,0,0,high,flat,abdomen,female,excision,Fll/Fll082.jpg,Fll/Fll083.jpg
+414,clark nevus,0,1,0,0,0,1,0,1,medium,flat,back,male,clinical follow up,Ggl/Ggl023.jpg,Ggl/Ggl024.jpg
+415,clark nevus,3,1,1,0,0,1,0,0,high,flat,back,male,excision,Ggl/Ggl051.jpg,Ggl/Ggl052.jpg
+421,clark nevus,1,1,0,0,1,1,0,0,medium,palpable,back,male,clinical follow up,Ggl/Ggl077.jpg,Ggl/Ggl078.jpg
+457,clark nevus,0,1,0,0,0,1,0,0,low,flat,back,male,clinical follow up,Fhl/Fhl091.jpg,Fhl/Fhl092.jpg
+469,clark nevus,1,1,0,0,1,1,0,0,medium,palpable,abdomen,female,excision,NLL/Nll023.jpg,NLL/Nll024.jpg
+472,combined nevus,2,0,0,0,0,1,1,0,medium,palpable,chest,male,excision,NGL/Ngl085.jpg,NGL/Ngl086.jpg
+481,combined nevus,3,1,0,0,1,1,1,0,high,palpable,back,male,excision,Gdl/Gdl099.jpg,Gdl/Gdl100.jpg
+527,dermal nevus,0,0,0,1,0,0,0,0,medium,palpable,lower limbs,female,clinical follow up,Ggl/Ggl007.jpg,Ggl/Ggl008.jpg
+532,dermal nevus,6,0,0,1,0,1,1,1,high,nodular,back,male,excision,Fll/Fll088.jpg,Fll/Fll089.jpg
+540,dermatofibroma,1,1,0,0,0,1,0,0,low,palpable,upper limbs,male,no further examination,A1l/Aal023.jpg,A1l/Aal024.jpg
+557,lentigo,2,1,0,1,0,0,0,0,medium,flat,abdomen,male,excision,Adl/Adl386bis.jpg,Adl/Adl387bis.jpg
+569,lentigo,0,1,0,0,0,1,0,0,low,flat,upper limbs,male,no further examination,New/newl007.jpg,New/newl008.jpg
+575,lentigo,0,1,0,1,0,0,0,0,low,flat,upper limbs,male,no further examination,New/newl023.jpg,New/newl024.jpg
+583,melanoma (in situ),5,1,1,1,0,1,0,0,low,flat,back,male,excision,NAL/Nal074.jpg,NAL/Nal073.jpg
+589,melanoma (in situ),5,1,1,1,0,1,0,0,medium,flat,head neck,female,excision,NAL/Nal087.jpg,NAL/Nal088.jpg
+600,melanoma (in situ),4,1,0,0,1,1,0,0,low,palpable,abdomen,male,excision,NBL/Nbl032.jpg,NBL/Nbl031.jpg
+604,melanoma (in situ),5,1,1,1,0,1,0,0,low,palpable,back,female,excision,NGL/Ngl061.jpg,NGL/Ngl062.jpg
+611,melanoma (in situ),5,1,1,1,0,1,0,0,high,flat,back,male,excision,Adl/Adl300.jpg,Adl/Adl301.jpg
+618,melanoma (in situ),3,1,0,1,0,0,0,0,high,palpable,lower limbs,female,excision,FBL/Fbl025.jpg,FBL/FBL026.JPG
+620,melanoma (in situ),4,1,0,0,1,1,0,0,high,flat,head neck,female,excision,FCL/FCL021.JPG,FCL/Fcl022.jpg
+631,melanoma (in situ),5,1,1,1,0,1,0,0,medium,flat,back,female,excision,Ggl/Ggl067.jpg,Ggl/Ggl068.jpg
+634,melanoma (in situ),3,1,0,0,1,0,0,1,medium,flat,head neck,female,excision,Fgl/Fgl028.jpg,Fgl/Fgl029.jpg
+635,melanoma (in situ),2,1,0,1,0,1,0,0,medium,palpable,back,female,excision,Fgl/Fgl056.jpg,Fgl/Fgl057.jpg
+645,melanoma (less than 0.76 mm),4,0,1,1,1,1,0,0,low,palpable,upper limbs,female,excision,NAL/Nal036.jpg,NAL/Nal035.jpg
+661,melanoma (less than 0.76 mm),6,0,1,1,1,1,1,0,low,flat,back,male,excision,NBL/Nbl033.jpg,NBL/Nbl034.jpg
+664,melanoma (less than 0.76 mm),5,1,1,0,1,1,0,0,medium,palpable,upper limbs,female,excision,NFL/Nfl071.jpg,NFL/nfl072.jpg
+685,melanoma (less than 0.76 mm),6,1,1,0,0,1,1,0,low,palpable,lower limbs,female,excision,NML/nml021bis.jpg,NML/Nml022.jpg
+693,melanoma (less than 0.76 mm),3,0,0,0,0,1,1,0,low,flat,lower limbs,female,excision,Gzl/gzl03.jpg,Gzl/gzl04.jpg
+716,melanoma (less than 0.76 mm),4,0,1,1,1,1,0,1,low,palpable,chest,male,excision,FFL/Ffl093.jpg,FFL/Ffl094.jpg
+717,melanoma (less than 0.76 mm),5,1,1,1,0,1,0,0,medium,flat,lower limbs,male,excision,Fll/Fll070.jpg,Fll/Fll071.jpg
+720,melanoma (less than 0.76 mm),4,0,1,1,1,1,0,0,medium,palpable,head neck,female,excision,Gcl/Gcl093.jpg,Gcl/Gcl094.jpg
+726,melanoma (less than 0.76 mm),8,1,1,1,1,1,1,0,low,palpable,back,male,excision,Fll/Fll096.jpg,Fll/Fll097.jpg
+736,melanoma (less than 0.76 mm),4,1,1,0,0,1,0,0,medium,palpable,upper limbs,female,excision,New/newl013.jpg,New/newl014.jpg
+739,melanoma (less than 0.76 mm),3,1,0,0,1,0,0,1,low,flat,back,male,excision,New/newl046.jpg,New/newl047.jpg
+741,melanoma (less than 0.76 mm),4,1,0,0,1,1,0,0,low,palpable,lower limbs,male,excision,New/newl050.jpg,New/newl051.jpg
+745,melanoma (0.76 to 1.5 mm),4,1,0,0,1,1,1,1,medium,nodular,chest,male,excision,NBL/Nbl058.jpg,NBL/Nbl059.jpg
+759,melanoma (0.76 to 1.5 mm),6,0,0,0,1,1,1,1,medium,palpable,abdomen,male,excision,NLL/Nll013.jpg,NLL/nll014.jpg
+762,melanoma (0.76 to 1.5 mm),3,0,0,0,0,1,1,0,high,palpable,back,male,excision,A1l/Aal001.jpg,A1l/Aal002.jpg
+781,melanoma (0.76 to 1.5 mm),4,0,1,1,0,1,1,0,high,nodular,lower limbs,female,excision,Gdl/Gdl011.jpg,Gdl/Gdl012.jpg
+796,melanoma (more than 1.5 mm),6,1,0,1,0,1,1,1,low,nodular,lower limbs,female,excision,NBL/Nbl035.jpg,NBL/Nbl037.jpg
+801,melanoma (more than 1.5 mm),5,1,0,1,0,0,1,1,high,nodular,chest,female,excision,NBL/Nbl055.jpg,NBL/Nbl054.jpg
+850,miscellaneous,6,0,1,1,1,1,0,1,high,palpable,lower limbs,female,excision,New/newl040.jpg,New/newl041.jpg
+863,reed or spitz nevus,6,1,1,0,0,1,1,0,high,palpable,lower limbs,male,excision,NCL/NCL077.JPG,NCL/Ncl078.jpg
+881,reed or spitz nevus,1,0,1,1,0,1,0,0,low,palpable,lower limbs,female,clinical follow up,NDL/Ndl084.jpg,NDL/Ndl083.jpg
+884,reed or spitz nevus,5,0,1,1,0,1,1,0,high,nodular,lower limbs,female,excision,NGL/Ngl032.jpg,NGL/Ngl033.jpg
+911,reed or spitz nevus,3,1,1,0,0,1,0,0,medium,flat,back,female,excision,Ael/Ael464.jpg,Ael/Ael465.jpg
+916,reed or spitz nevus,2,0,1,1,0,1,0,0,low,palpable,lower limbs,female,clinical follow up,Gal/Gal221.jpg,Gal/Gal222.jpg
+937,seborrheic keratosis,2,0,0,0,0,0,0,1,medium,palpable,back,male,no further examination,NEL/NEL022.JPG,NEL/Nel021.jpg
+944,seborrheic keratosis,1,0,0,1,0,0,0,1,low,nodular,upper limbs,female,no further examination,NFL/Nfl015.jpg,NFL/Nfl016.jpg
+970,seborrheic keratosis,2,0,0,1,0,0,0,1,medium,nodular,head neck,female,no further examination,FDL/Fdl072.jpg,FDL/Fdl071.jpg
+986,vascular lesion,1,0,0,0,0,1,0,0,low,flat,acral,male,no further examination,NEL/Nel060.jpg,NEL/Nel061.jpg
+992,vascular lesion,0,0,0,0,0,0,0,0,low,nodular,head neck,female,no further examination,NEL/Nel072.jpg,NEL/Nel073.jpg
+993,vascular lesion,0,0,0,0,0,0,0,0,low,nodular,lower limbs,female,no further examination,NEL/Nel074.jpg,NEL/Nel075.jpg
+1004,vascular lesion,0,0,0,0,0,0,0,0,low,palpable,chest,female,no further examination,Ggl/Ggl013.jpg,Ggl/Ggl014.jpg
+29,basal cell carcinoma,2,0,0,1,0,1,0,1,medium,palpable,back,female,excision,Gzl/gzl01.jpg,Gzl/gzl02.jpg
+86,clark nevus,0,1,0,1,0,0,0,0,low,flat,back,female,clinical follow up,NCL/Ncl043.jpg,NCL/Ncl044.jpg
+92,clark nevus,0,1,0,1,0,1,0,0,medium,palpable,back,male,clinical follow up,NCL/Ncl062.jpg,NCL/Ncl063.jpg
+98,clark nevus,4,1,0,1,0,1,0,0,high,palpable,abdomen,male,excision,NCL/Ncl086.jpg,NCL/Ncl085.jpg
+103,clark nevus,1,1,0,0,1,1,0,0,low,flat,back,male,clinical follow up,NDL/Ndl020.jpg,NDL/Ndl021.jpg
+112,clark nevus,0,1,0,1,0,1,0,0,low,flat,abdomen,male,clinical follow up,NDL/Ndl038.jpg,NDL/Ndl039.jpg
+117,clark nevus,0,0,1,1,0,1,0,0,low,palpable,lower limbs,female,clinical follow up,NGL/Ngl042.jpg,NGL/Ngl043.jpg
+129,clark nevus,4,1,1,0,0,1,0,1,high,palpable,back,male,excision,NIL/Nil007.jpg,NIL/Nil008.jpg
+145,clark nevus,0,1,0,0,0,0,0,0,low,flat,abdomen,female,clinical follow up,NLL/Nll017.jpg,NLL/Nll018.jpg
+148,clark nevus,0,1,0,1,0,1,0,0,low,flat,lower limbs,female,clinical follow up,NLL/Nll025.jpg,NLL/nll026.jpg
+159,clark nevus,0,1,0,0,0,1,0,0,low,flat,lower limbs,female,clinical follow up,NLL/Nll075.jpg,NLL/Nll076.jpg
+169,clark nevus,0,1,0,0,0,0,0,0,low,flat,back,female,clinical follow up,NML/Nml013.jpg,NML/Nml014.jpg
+182,clark nevus,0,0,1,0,0,0,0,0,low,flat,acral,male,clinical follow up,A2l/Abl122.jpg,A2l/Abl123.jpg
+191,clark nevus,2,0,1,0,0,1,0,0,medium,flat,acral,female,excision,A3l/Acl252.jpg,A3l/Acl253.jpg
+213,clark nevus,0,0,0,1,0,1,0,0,low,palpable,abdomen,female,clinical follow up,A2l/Abl136.jpg,A2l/Abl137.jpg
+239,clark nevus,2,1,0,0,1,1,0,0,high,flat,back,male,excision,A2l/Abl164.jpg,A2l/Abl165.jpg
+242,clark nevus,0,1,0,0,0,1,0,0,medium,flat,back,male,excision,A2l/Abl170.jpg,A2l/Abl171.jpg
+243,clark nevus,1,1,0,0,0,1,0,0,medium,flat,buttocks,female,clinical follow up,A2l/Abl174.jpg,A2l/Abl175.jpg
+250,clark nevus,2,1,0,0,1,1,0,0,medium,flat,lower limbs,male,excision,A3l/Acl220.jpg,A3l/Acl221.jpg
+282,clark nevus,2,1,0,1,1,1,0,0,high,flat,chest,male,excision,A1l/Aal007.jpg,A1l/Aal008.jpg
+297,clark nevus,0,0,0,0,0,1,0,1,low,nodular,back,male,clinical follow up,Gal/Gal231.jpg,Gal/Gal232.jpg
+310,clark nevus,0,1,0,0,0,1,0,0,low,flat,chest,male,clinical follow up,FAL/Fal023.jpg,FAL/Fal024.jpg
+321,clark nevus,0,1,0,0,0,1,0,0,low,flat,abdomen,female,clinical follow up,FBL/Fbl001.jpg,FBL/Fbl002.jpg
+327,clark nevus,1,1,1,1,0,1,0,0,high,flat,lower limbs,female,excision,Fll/Fll020.jpg,Fll/Fll021.jpg
+345,clark nevus,1,1,0,0,1,1,0,0,medium,flat,lower limbs,male,clinical follow up,FBL/Fbl089.jpg,FBL/Fbl090.jpg
+358,clark nevus,4,1,0,0,1,1,0,1,high,flat,back,male,excision,FCL/Fcl027.jpg,FCL/Fcl028.jpg
+359,clark nevus,0,1,0,0,0,1,0,0,medium,flat,abdomen,female,clinical follow up,FCL/Fcl029.jpg,FCL/Fcl030.jpg
+408,clark nevus,2,1,0,0,1,1,0,0,medium,palpable,head neck,male,excision,FDL/Fdl027.jpg,FDL/Fdl028.jpg
+417,clark nevus,4,1,1,1,1,1,0,0,high,palpable,chest,male,excision,Ggl/Ggl061.jpg,Ggl/Ggl062.jpg
+425,clark nevus,0,1,0,0,0,0,0,0,low,flat,back,male,clinical follow up,Fgl/Fgl022.jpg,Fgl/Fgl010.jpg
+433,clark nevus,0,1,0,0,0,1,0,1,medium,flat,chest,male,excision,Fgl/Fgl050.jpg,Fgl/Fgl051.jpg
+435,clark nevus,4,1,1,1,0,0,0,0,high,flat,back,male,excision,Fgl/Fgl069.jpg,Fgl/Fgl068.jpg
+439,clark nevus,1,1,0,0,0,1,0,0,medium,flat,upper limbs,female,clinical follow up,Fhl/Fhl031.jpg,Fhl/Fhl032.jpg
+460,clark nevus,0,1,0,0,0,1,0,0,medium,flat,back,male,clinical follow up,Fhl/Fhl097.jpg,Fhl/Fhl098.jpg
+478,combined nevus,4,0,1,0,0,1,1,0,high,palpable,upper limbs,female,excision,Gal/Gal217.jpg,Gal/Gal218.jpg
+491,congenital nevus,3,1,0,0,0,1,0,0,medium,palpable,back,male,excision,Adl/Adl376.jpg,Adl/Adl377.jpg
+517,dermal nevus,0,0,0,0,0,1,0,1,low,nodular,abdomen,female,no further examination,A3l/Acl202.jpg,A3l/Acl203.jpg
+535,dermatofibroma,0,0,0,0,0,0,0,1,medium,palpable,upper limbs,female,no further examination,A1l/Aal017.jpg,A1l/Aal018.jpg
+561,lentigo,0,1,0,0,0,1,0,0,low,palpable,head neck,male,no further examination,Gal/Gal168.jpg,Gal/Gal169.jpg
+567,lentigo,2,1,0,0,0,0,0,0,medium,flat,upper limbs,male,excision,Fml/Fml025.jpg,Fml/Fml026.jpg
+573,lentigo,0,1,0,1,0,0,0,0,low,flat,upper limbs,male,no further examination,New/newl019.jpg,New/newl020.jpg
+574,lentigo,0,1,0,0,0,0,0,0,low,flat,upper limbs,male,no further examination,New/newl021.jpg,New/newl022.jpg
+578,melanoma (in situ),7,1,1,1,0,1,1,0,medium,palpable,lower limbs,female,excision,NAL/Nal021.jpg,NAL/Nal022.jpg
+579,melanoma (in situ),1,1,0,0,1,1,0,1,medium,flat,chest,male,excision,NAL/Nal039.jpg,NAL/Nal037.jpg
+586,melanoma (in situ),4,1,0,0,1,1,0,0,medium,flat,head neck,male,excision,NAL/Nal079.jpg,NAL/Nal080.jpg
+593,melanoma (in situ),4,1,0,0,1,1,0,0,medium,flat,back,female,excision,NBL/Nbl002.jpg,NBL/Nbl001.jpg
+599,melanoma (in situ),5,1,0,1,1,1,0,1,low,flat,head neck,female,excision,NBL/Nbl026.jpg,NBL/Nbl025.jpg
+609,melanoma (in situ),3,1,0,0,0,1,0,0,high,palpable,lower limbs,male,excision,NIL/Nil079.jpg,NIL/Nil080.jpg
+629,melanoma (in situ),6,1,1,1,0,0,0,1,medium,palpable,lower limbs,male,excision,Gdl/Gdl035.jpg,Gdl/Gdl037.jpg
+633,melanoma (in situ),4,1,1,0,0,1,0,0,high,flat,lower limbs,male,excision,Fgl/Fgl017.jpg,Fgl/Fgl018.jpg
+653,melanoma (less than 0.76 mm),3,0,0,1,1,1,0,1,medium,palpable,lower limbs,female,excision,NAL/Nal096.jpg,NAL/nal095.jpg
+673,melanoma (less than 0.76 mm),4,1,0,0,1,1,0,1,low,flat,head neck,female,excision,NGL/Ngl063.jpg,NGL/Ngl064.jpg
+677,melanoma (less than 0.76 mm),5,1,1,0,1,1,0,0,medium,palpable,upper limbs,female,excision,NIL/Nil075.jpg,NIL/Nil076.jpg
+700,melanoma (less than 0.76 mm),5,1,1,1,0,1,0,0,low,palpable,chest,female,excision,Gal/Gal256.jpg,Gal/Gal257.jpg
+710,melanoma (less than 0.76 mm),3,1,0,1,1,1,0,0,low,flat,upper limbs,female,excision,FCL/Fcl059.jpg,FCL/Fcl060.jpg
+711,melanoma (less than 0.76 mm),8,1,1,1,1,1,1,0,low,palpable,back,male,excision,Fll/Fll044.jpg,Fll/Fll045.jpg
+722,melanoma (less than 0.76 mm),2,0,0,1,1,0,0,0,high,palpable,abdomen,female,excision,Gdl/Gdl019.jpg,Gdl/Gdl021.jpg
+724,melanoma (less than 0.76 mm),4,1,1,1,0,1,0,0,high,palpable,chest,female,excision,Ggl/Ggl049.jpg,Ggl/Ggl050.jpg
+728,melanoma (less than 0.76 mm),5,0,1,0,1,1,0,1,medium,flat,lower limbs,female,excision,Fgl/Fgl085.jpg,Fgl/Fgl083.jpg
+735,melanoma (less than 0.76 mm),5,1,1,1,0,1,0,0,high,flat,abdomen,female,excision,Fll/Fll131.jpg,Fll/Fll132.jpg
+761,melanoma (0.76 to 1.5 mm),3,0,0,0,0,1,1,0,high,nodular,back,male,excision,NML/Nml072.jpg,NML/Nml073.jpg
+777,melanoma (0.76 to 1.5 mm),4,1,0,0,1,1,1,0,medium,palpable,lower limbs,female,excision,FFL/Ffl067.jpg,FFL/FFL068.JPG
+782,melanoma (0.76 to 1.5 mm),5,0,1,1,0,1,1,0,high,nodular,lower limbs,female,excision,Gdl/Gdl022.jpg,Gdl/Gdl023.jpg
+792,melanoma (0.76 to 1.5 mm),4,0,0,1,0,1,1,0,low,palpable,chest,female,excision,Fll/Fll129.jpg,Fll/Fll130.jpg
+799,melanoma (more than 1.5 mm),7,0,1,1,0,1,1,1,low,nodular,lower limbs,male,excision,NBL/NBL047.JPG,NBL/Nbl048.jpg
+810,melanoma (more than 1.5 mm),3,0,0,0,0,1,1,0,medium,nodular,back,female,excision,NML/Nml080.jpg,NML/Nml081.jpg
+811,melanoma (more than 1.5 mm),0,0,0,0,0,0,0,1,high,nodular,back,male,excision,Ael/Ael497.jpg,Ael/Ael498.jpg
+813,melanoma (more than 1.5 mm),10,1,1,1,1,1,1,1,low,nodular,lower limbs,male,excision,Gzl/gzl63.jpg,Gzl/gzl64.jpg
+817,melanoma (more than 1.5 mm),7,0,1,1,0,1,1,1,low,nodular,chest,male,excision,FDL/Fdl051.jpg,FDL/FDL052.JPG
+820,melanoma (more than 1.5 mm),6,0,0,1,0,1,1,1,low,nodular,back,male,excision,Fgl/Fgl043.jpg,Fgl/Fgl044.jpg
+821,melanoma (more than 1.5 mm),7,0,1,1,0,1,1,1,medium,nodular,lower limbs,female,excision,Fil/Fil007.jpg,Fil/Fil008.jpg
+834,melanosis,1,0,1,1,1,0,0,1,medium,flat,genital areas,female,clinical follow up,Fhl/Fhl002.jpg,Fhl/Fhl002.jpg
+838,melanosis,0,0,1,0,0,1,0,0,low,flat,head neck,female,clinical follow up,Fhl/Fhl009.jpg,Fhl/Fhl010.jpg
+854,recurrent nevus,0,1,1,0,0,1,0,0,medium,flat,abdomen,female,excision,NML/Nml003.jpg,NML/Nml004.jpg
+868,reed or spitz nevus,0,0,1,1,0,1,0,0,low,palpable,upper limbs,female,excision,NDL/Ndl051.jpg,NDL/Ndl052.jpg
+874,reed or spitz nevus,5,1,1,0,1,1,0,0,high,palpable,lower limbs,female,excision,NDL/NDL064.JPG,NDL/NDL063.JPG
+888,reed or spitz nevus,3,0,1,0,0,1,1,0,medium,flat,lower limbs,female,excision,NIL/Nil003.jpg,NIL/Nil004.jpg
+889,reed or spitz nevus,3,0,0,0,0,1,1,0,high,palpable,lower limbs,male,excision,NIL/Nil022.jpg,NIL/Nil023.jpg
+897,reed or spitz nevus,1,0,1,0,0,1,0,0,low,palpable,lower limbs,male,excision,NML/Nml048.jpg,NML/Nml049.jpg
+908,reed or spitz nevus,1,0,1,1,0,0,0,0,low,flat,back,male,excision,Ael/Ael400.jpg,Ael/Ael401.jpg
+909,reed or spitz nevus,0,0,1,1,0,0,0,0,low,palpable,upper limbs,male,excision,Ael/Ael404.jpg,Ael/Ael405.jpg
+919,reed or spitz nevus,4,0,1,1,1,1,0,0,high,palpable,lower limbs,female,excision,FBL/Fbl017.jpg,FBL/Fbl018.jpg
+922,reed or spitz nevus,7,0,1,1,0,1,1,1,high,palpable,lower limbs,male,excision,FEL/Fel037.jpg,FEL/Fel038.jpg
+924,reed or spitz nevus,1,1,1,0,1,1,0,0,medium,palpable,abdomen,male,excision,FEL/Fel079.jpg,FEL/Fel080.jpg
+938,seborrheic keratosis,1,0,0,1,0,0,0,0,high,palpable,abdomen,male,excision,NEL/Nel024.jpg,NEL/Nel023.jpg
+953,seborrheic keratosis,5,1,0,1,1,1,1,0,high,palpable,upper limbs,male,excision,A3l/Acl228.jpg,A3l/Acl229.jpg
+956,seborrheic keratosis,0,0,0,0,0,0,0,1,medium,nodular,back,female,clinical follow up,Ael/Ael426.jpg,Ael/Ael427.jpg
+960,seborrheic keratosis,1,0,0,1,0,1,0,0,low,palpable,chest,female,no further examination,Gzl/gzl29.jpg,Gzl/gzl30.jpg
+965,seborrheic keratosis,2,1,0,0,0,0,0,0,medium,palpable,head neck,male,clinical follow up,FAL/Fal047.jpg,FAL/Fal048.jpg
+971,seborrheic keratosis,2,1,0,0,0,0,0,0,high,palpable,head neck,male,clinical follow up,FDL/Fdl073.jpg,FDL/Fdl074.jpg
+975,seborrheic keratosis,0,0,0,1,0,0,0,0,low,palpable,abdomen,female,no further examination,Ggl/Ggl045.jpg,Ggl/Ggl046.jpg
+995,vascular lesion,0,0,0,1,0,0,0,0,medium,flat,acral,female,clinical follow up,NEL/Nel080.jpg,NEL/Nel081.jpg
+998,vascular lesion,0,0,0,0,0,0,0,0,low,palpable,upper limbs,male,no further examination,NML/Nml107.jpg,NML/Nml108.jpg
+1002,vascular lesion,0,0,0,0,0,0,0,0,low,palpable,upper limbs,male,no further examination,Gzl/gzl73.jpg,Gzl/gzl74.jpg
+1007,vascular lesion,0,0,0,0,0,0,0,0,medium,nodular,head neck,male,no further examination,Fhl/Fhl057.jpg,Fhl/Fhl058.jpg
+1010,vascular lesion,0,0,0,1,0,0,0,0,low,palpable,upper limbs,male,no further examination,New/newl015.jpg,New/newl016.jpg
+15,basal cell carcinoma,2,0,0,1,1,0,0,0,low,palpable,upper limbs,female,excision,NEL/NEL099.JPG,NEL/Nel098.jpg
+32,basal cell carcinoma,0,0,0,0,0,0,0,1,low,nodular,back,male,excision,Gal/Gal097.jpg,Gal/Gal098.jpg
+33,basal cell carcinoma,3,0,0,0,0,1,1,0,low,palpable,back,female,excision,FAL/Fal095.jpg,FAL/Fal096.jpg
+45,blue nevus,0,0,0,1,0,0,0,0,low,palpable,lower limbs,male,no further examination,NFL/Nfl047.jpg,NFL/Nfl048.jpg
+55,blue nevus,0,0,0,1,0,0,0,0,medium,flat,back,female,clinical follow up,Ael/Ael443.jpg,Ael/Ael444.jpg
+58,blue nevus,1,0,0,1,0,0,0,0,medium,palpable,back,male,excision,Ael/Ael509.jpg,Ael/Ael510.jpg
+60,blue nevus,0,0,0,1,0,0,0,0,low,flat,lower limbs,female,clinical follow up,Gzl/gzl23.jpg,Gzl/gzl24.jpg
+67,blue nevus,0,0,0,1,0,0,0,1,low,palpable,back,female,clinical follow up,Ggl/Ggl003.jpg,Ggl/Ggl004.jpg
+79,clark nevus,1,1,0,1,1,0,0,0,medium,flat,back,male,excision,NCL/Ncl007.jpg,NCL/Ncl008.jpg
+100,clark nevus,2,0,1,0,1,1,0,0,medium,flat,acral,male,excision,NDL/Ndl011.jpg,NDL/Ndl012.jpg
+109,clark nevus,0,1,1,0,0,0,0,0,low,flat,abdomen,female,clinical follow up,NDL/Ndl032.jpg,NDL/Ndl033.jpg
+113,clark nevus,4,0,0,1,0,1,1,0,medium,flat,lower limbs,female,excision,NDL/Ndl041.jpg,NDL/Ndl040.jpg
+114,clark nevus,0,0,1,0,0,1,0,0,low,flat,acral,female,clinical follow up,NFL/Nfl031.jpg,NFL/Nfl032.jpg
+116,clark nevus,1,1,0,0,1,1,0,0,medium,flat,upper limbs,female,excision,NGL/Ngl022.jpg,NGL/Ngl023.jpg
+121,clark nevus,1,1,0,0,1,1,0,1,medium,flat,chest,female,excision,NGL/Ngl075.jpg,NGL/Ngl076.jpg
+126,clark nevus,2,0,0,0,1,1,0,1,medium,palpable,back,male,excision,NHL/Nhl014.jpg,NHL/Nhl015.jpg
+136,clark nevus,4,1,0,0,1,1,0,0,high,flat,buttocks,female,excision,NIL/Nil036.jpg,NIL/Nil037.jpg
+150,clark nevus,0,0,1,0,0,1,0,0,low,flat,acral,female,clinical follow up,NLL/nll031.jpg,NLL/nll032.jpg
+161,clark nevus,1,1,0,0,1,1,0,0,low,flat,upper limbs,male,clinical follow up,NLL/Nll093.jpg,NLL/Nll094.jpg
+180,clark nevus,2,0,1,0,0,1,0,0,medium,flat,acral,female,clinical follow up,A2l/Abl117.jpg,A2l/Abl118.jpg
+197,clark nevus,0,1,0,0,0,1,0,0,low,flat,acral,female,clinical follow up,A1l/Aal045.jpg,A1l/Aal046.jpg
+200,clark nevus,0,0,1,0,0,1,0,0,low,flat,acral,male,clinical follow up,A1l/Aal055.jpg,A1l/Aal056.jpg
+202,clark nevus,2,0,1,0,0,1,0,0,medium,flat,acral,female,excision,A1l/Aal063.jpg,A1l/Aal064.jpg
+218,clark nevus,0,1,0,0,0,1,0,0,low,flat,buttocks,female,clinical follow up,A3l/Acl222.jpg,A3l/Acl223.jpg
+227,clark nevus,0,0,1,1,0,1,0,0,medium,flat,lower limbs,male,clinical follow up,Adl/Adl361.jpg,Adl/Adl362.jpg
+232,clark nevus,2,1,0,0,0,1,0,0,medium,flat,buttocks,female,excision,A2l/Abl150.jpg,A2l/Abl151.jpg
+249,clark nevus,2,1,0,1,0,1,0,0,medium,flat,chest,male,excision,A3l/Acl216.jpg,A3l/Acl217.jpg
+270,clark nevus,0,1,0,0,0,1,0,0,medium,flat,lower limbs,male,clinical follow up,Ael/Ael412.jpg,Ael/Ael413.jpg
+272,clark nevus,0,1,0,0,0,1,0,0,medium,palpable,abdomen,female,excision,Ael/Ael424.jpg,Ael/Ael425.jpg
+312,clark nevus,0,1,0,1,0,1,0,0,low,flat,lower limbs,female,clinical follow up,FAL/Fal037.jpg,FAL/FAL038.JPG
+328,clark nevus,3,1,1,0,0,0,0,0,high,flat,lower limbs,female,excision,FBL/Fbl021.jpg,FBL/Fbl022.jpg
+341,clark nevus,3,1,0,0,0,1,1,0,high,flat,back,male,excision,FBL/Fbl073.jpg,FBL/Fbl074.jpg
+360,clark nevus,1,1,0,0,1,1,0,0,high,flat,buttocks,female,excision,FCL/FCL031.JPG,FCL/Fcl032.jpg
+362,clark nevus,3,1,1,1,0,1,0,0,medium,flat,chest,male,excision,FCL/Fcl035.jpg,FCL/Fcl036.jpg
+368,clark nevus,3,1,0,1,1,1,0,0,high,palpable,back,male,excision,FCL/Fcl065.jpg,FCL/FCL066.JPG
+371,clark nevus,2,1,0,0,1,1,0,1,high,flat,chest,female,excision,FCL/Fcl079.jpg,FCL/Fcl080.jpg
+397,clark nevus,0,1,0,0,0,1,0,0,low,flat,abdomen,male,clinical follow up,FFL/Ffl009.jpg,FFL/Ffl010.jpg
+400,clark nevus,3,1,0,0,0,1,0,0,high,palpable,back,male,excision,FFL/Ffl031.jpg,FFL/FFL032.JPG
+401,clark nevus,2,1,0,0,1,1,0,0,high,flat,acral,male,excision,FFL/Ffl065.jpg,FFL/Ffl066.jpg
+403,clark nevus,0,1,0,0,0,1,0,0,medium,flat,back,female,clinical follow up,FFL/Ffl081.jpg,FFL/Ffl082.jpg
+418,clark nevus,4,1,1,0,1,1,0,0,high,palpable,acral,male,excision,Ggl/Ggl033.jpg,Ggl/Ggl034.jpg
+428,clark nevus,4,1,0,1,0,1,0,0,high,flat,upper limbs,female,excision,Fll/Fll086.jpg,Fll/Fll087.jpg
+444,clark nevus,0,1,0,0,0,1,0,0,low,flat,back,male,clinical follow up,Fhl/Fhl063.jpg,Fhl/Fhl064.jpg
+445,clark nevus,0,1,0,0,0,1,0,0,low,flat,back,male,clinical follow up,Fhl/Fhl065.jpg,Fhl/Fhl066.jpg
+451,clark nevus,0,1,0,0,0,0,0,1,low,flat,back,male,clinical follow up,Fhl/Fhl079.jpg,Fhl/Fhl080.jpg
+462,clark nevus,0,1,0,0,0,0,0,0,medium,flat,back,female,clinical follow up,Fll/Fll141.jpg,Fll/Fll142.jpg
+480,combined nevus,2,0,0,1,0,1,1,0,medium,palpable,abdomen,male,excision,FDL/Fdl061.jpg,FDL/Fdl062.jpg
+486,congenital nevus,2,1,0,1,0,1,0,0,medium,palpable,abdomen,female,clinical follow up,NEL/NEL009.JPG,NEL/Nel008.jpg
+492,congenital nevus,1,1,0,1,0,1,0,0,medium,flat,lower limbs,male,clinical follow up,Ael/Ael474.jpg,Ael/Ael475.jpg
+524,dermal nevus,0,0,0,0,0,1,0,1,low,nodular,abdomen,male,no further examination,Gal/Gal032.jpg,Gal/Gal033.jpg
+525,dermal nevus,3,0,0,0,0,1,1,0,high,nodular,upper limbs,female,excision,FBL/Fbl029.jpg,FBL/Fbl030.jpg
+536,dermatofibroma,3,0,0,0,0,1,0,1,high,palpable,lower limbs,male,excision,A1l/Aal019.jpg,A1l/Aal020.jpg
+537,dermatofibroma,0,1,0,0,0,1,0,0,low,palpable,lower limbs,female,no further examination,A2l/Abl196.jpg,A2l/Abl197.jpg
+547,dermatofibroma,1,1,0,0,0,1,0,0,medium,palpable,back,male,clinical follow up,Ael/Ael526.jpg,Ael/Ael527.jpg
+560,lentigo,0,1,0,0,0,0,0,0,medium,flat,head neck,female,clinical follow up,Gzl/gzl47.jpg,Gzl/gzl48.jpg
+570,lentigo,2,1,0,0,0,0,0,0,medium,flat,back,male,clinical follow up,New/newl009.jpg,New/newl010.jpg
+581,melanoma (in situ),8,1,1,1,1,1,1,1,low,palpable,lower limbs,female,excision,NAL/Nal046.jpg,NAL/Nal047.jpg
+582,melanoma (in situ),4,0,1,1,1,1,0,1,medium,palpable,head neck,male,excision,NAL/Nal067.jpg,NAL/Nal066.jpg
+640,melanoma (in situ),3,1,0,0,1,0,0,1,medium,flat,head neck,male,excision,New/newl052.jpg,New/newl053.jpg
+641,melanoma (less than 0.76 mm),8,1,1,1,1,1,1,0,low,palpable,back,female,excision,NAL/Nal007.jpg,NAL/Nal005.jpg
+650,melanoma (less than 0.76 mm),6,0,1,1,1,1,0,1,low,palpable,lower limbs,female,excision,NAL/Nal068.jpg,NAL/Nal070.jpg
+672,melanoma (less than 0.76 mm),7,1,1,1,0,1,1,0,low,palpable,chest,female,excision,NGL/Ngl054.jpg,NGL/Ngl055.jpg
+683,melanoma (less than 0.76 mm),7,1,1,0,1,1,1,0,low,flat,upper limbs,female,excision,NLL/Nll001.jpg,NLL/Nll002.jpg
+696,melanoma (less than 0.76 mm),5,1,1,0,1,1,0,0,low,flat,back,female,excision,Gzl/gzl49.jpg,Gzl/gzl50.jpg
+727,melanoma (less than 0.76 mm),4,1,1,0,1,1,0,0,low,flat,lower limbs,female,excision,Fgl/Fgl081.jpg,Fgl/Fgl082.jpg
+730,melanoma (less than 0.76 mm),4,1,1,1,0,1,0,0,medium,flat,back,male,excision,Fll/Fll107.jpg,Fll/Fll108.jpg
+733,melanoma (less than 0.76 mm),6,1,1,1,1,1,0,0,medium,palpable,back,female,excision,Fll/Fll117.jpg,Fll/Fll118.jpg
+747,melanoma (0.76 to 1.5 mm),7,1,1,1,0,1,1,0,low,nodular,back,male,excision,NBL/Nbl062.jpg,NBL/Nbl063.jpg
+752,melanoma (0.76 to 1.5 mm),5,1,1,0,1,1,1,0,low,nodular,back,male,excision,NGL/Ngl065.jpg,NGL/Ngl066.jpg
+760,melanoma (0.76 to 1.5 mm),4,0,0,1,0,1,1,0,low,palpable,lower limbs,male,excision,NML/nml024bis.jpg,NML/Nml024.jpg
+787,melanoma (0.76 to 1.5 mm),9,1,1,0,1,1,1,1,low,nodular,lower limbs,female,excision,Fgl/Fgl032.jpg,Fgl/Fgl006.jpg
+793,melanoma (0.76 to 1.5 mm),7,0,1,1,0,1,1,1,low,palpable,back,male,excision,Fll/Fll135.jpg,Fll/Fll136.jpg
+797,melanoma (more than 1.5 mm),7,1,1,1,0,1,1,0,low,nodular,back,female,excision,NBL/Nbl039.jpg,NBL/Nbl040.jpg
+804,melanoma (more than 1.5 mm),5,0,0,0,0,1,1,1,medium,palpable,chest,male,excision,NGL/Ngl056.jpg,NGL/Ngl057.jpg
+806,melanoma (more than 1.5 mm),8,1,1,1,1,1,1,1,low,nodular,back,male,excision,NHL/NHL016.JPG,NHL/Nhl017.jpg
+808,melanoma (more than 1.5 mm),4,1,0,1,0,1,1,0,high,nodular,back,female,excision,NIL/Nil085.jpg,NIL/Nil086.jpg
+818,melanoma (more than 1.5 mm),7,1,1,1,0,1,1,0,low,nodular,lower limbs,female,excision,Gcl/Gcl038.jpg,Gcl/Gcl039.jpg
+827,melanoma metastasis,3,0,0,0,0,1,1,1,high,nodular,chest,male,excision,NBL/Nbl042.jpg,NBL/Nbl042.jpg
+830,melanosis,0,1,0,0,0,0,0,0,low,flat,head neck,male,clinical follow up,NFL/Nfl037.jpg,NFL/Nfl038.jpg
+837,melanosis,0,0,1,1,0,0,0,1,low,flat,head neck,male,clinical follow up,Fhl/Fhl007.jpg,Fhl/Fhl008.jpg
+840,melanosis,0,0,1,1,0,0,0,0,low,flat,head neck,female,clinical follow up,Fhl/Fhl013.jpg,Fhl/Fhl014.jpg
+859,reed or spitz nevus,2,1,1,1,0,1,0,0,high,palpable,lower limbs,female,excision,NBL/Nbl087.jpg,NBL/Nbl088.jpg
+865,reed or spitz nevus,0,0,1,1,0,1,0,0,low,palpable,abdomen,male,excision,NCL/Ncl096.jpg,NCL/Ncl095.jpg
+878,reed or spitz nevus,1,0,0,0,1,1,0,0,medium,palpable,lower limbs,female,clinical follow up,NDL/Ndl073.jpg,NDL/Ndl074.jpg
+880,reed or spitz nevus,2,0,1,0,0,1,1,0,medium,palpable,buttocks,male,clinical follow up,NDL/Ndl082.jpg,NDL/Ndl081.jpg
+887,reed or spitz nevus,3,1,1,1,1,1,0,0,medium,flat,upper limbs,male,excision,NGL/Ngl077.jpg,NGL/Ngl078.jpg
+905,reed or spitz nevus,4,0,0,1,0,1,1,0,high,palpable,lower limbs,female,excision,Adl/Adl357.jpg,Adl/Adl358.jpg
+910,reed or spitz nevus,0,0,1,1,0,0,0,0,medium,flat,lower limbs,female,excision,Ael/Ael406.jpg,Ael/Ael407.jpg
+912,reed or spitz nevus,3,1,1,0,0,1,0,0,high,flat,chest,male,excision,Ael/Ael483.jpg,Ael/Ael484.jpg
+915,reed or spitz nevus,9,1,1,1,0,1,1,1,high,palpable,lower limbs,female,excision,Gal/Gal190.jpg,Gal/Gal191.jpg
+947,seborrheic keratosis,0,0,0,1,0,0,0,1,medium,nodular,head neck,female,no further examination,NFL/Nfl021.jpg,NFL/Nfl022.jpg
+962,seborrheic keratosis,1,0,0,1,0,0,0,0,low,palpable,back,male,no further examination,Gal/Gal129.jpg,Gal/Gal130.jpg
+996,vascular lesion,0,0,0,1,0,0,0,0,high,nodular,head neck,female,excision,NGL/Ngl081.jpg,NGL/Ngl082.jpg
+1011,melanoma,2,0,0,1,1,0,0,0,high,palpable,lower limbs,female,excision,Adl/Adl388.jpg,Adl/Adl389.jpg

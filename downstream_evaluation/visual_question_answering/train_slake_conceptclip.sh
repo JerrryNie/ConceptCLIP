@@ -1,0 +1,3 @@
+export CUDA_VISIBLE_DEVICES=5
+
+python tmpclipl/main_tmpclip.py tmpclipl/train_slake_args_conceptclip.json

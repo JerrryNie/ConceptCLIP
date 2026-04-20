@@ -1,0 +1,20 @@
+{
+    "embed_dim": 1152,
+    "init_logit_bias": -10,
+    "vision_cfg": {
+        "image_size": 384,
+        "timm_model_name": "vit_so400m_patch14_siglip_384",
+        "timm_model_pretrained": true,
+        "timm_pool": "map",
+        "timm_proj": "none"
+    },
+    "text_cfg": {
+        "context_length": 77,
+        "width": 768,
+        "hf_model_name": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+        "hf_tokenizer_name": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+        "output_tokens": true,
+        "hf_proj_type": "linear"
+    },
+    "custom_text": true
+}
