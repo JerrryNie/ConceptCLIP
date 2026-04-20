@@ -23,9 +23,12 @@ cd ConceptCLIP_Full
 pip install -r requirements.txt
 ```
 
-### Download Pre-trained Checkpoint
+### Access Pre-trained Model from Hugging Face
 
-Download the pre-trained checkpoint from [this link](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/EW2ycP4PMhVJlWSSPQCSSxcBIJQKmhXZ1X9NLsIaLtQcwg?e=IbJ3qX), unzip it and place the `ConceptCLIP` directory in `./pre_training/src/pretrained_checkpoint`.
+ConceptCLIP is available on Hugging Face as `JerrryNie/ConceptCLIP`.
+
+> **Note**
+> The Hugging Face repository uses gated access. Please request access on the model page first, then load the model directly with `transformers`.
 
 ### Using Pre-trained Model
 
@@ -34,20 +37,20 @@ from transformers import AutoModel, AutoProcessor
 import torch
 from PIL import Image
 
-# Load model and processor
-model = AutoModel.from_pretrained('pre_training/src/pretrained_checkpoint/ConceptCLIP', trust_remote_code=True)
-processor = AutoProcessor.from_pretrained('pre_training/src/pretrained_checkpoint/ConceptCLIP', trust_remote_code=True)
+# Load model and processor directly from Hugging Face
+model = AutoModel.from_pretrained("JerrryNie/ConceptCLIP", trust_remote_code=True)
+processor = AutoProcessor.from_pretrained("JerrryNie/ConceptCLIP", trust_remote_code=True)
 
 # Prepare inputs
-image = Image.open('pre_training/src/pretrained_checkpoint/ConceptCLIP/example_data/chest_X-ray.jpg').convert('RGB')
-labels = ['chest X-ray', 'brain MRI', 'skin lesion']
-texts = [f'a medical image of {label}' for label in labels]
+image = Image.open("example_data/chest_X-ray.jpg").convert("RGB")
+labels = ["chest X-ray", "brain MRI", "skin lesion"]
+texts = [f"a medical image of {label}" for label in labels]
 
 # Process inputs
 inputs = processor(
-    images=image, 
+    images=image,
     text=texts,
-    return_tensors='pt',
+    return_tensors="pt",
     padding=True,
     truncation=True
 ).to(model.device)
@@ -55,11 +58,14 @@ inputs = processor(
 # Get predictions
 with torch.no_grad():
     outputs = model(**inputs)
-    logits = (outputs['logit_scale'] * outputs['image_features'] @ outputs['text_features'].t()).softmax(dim=-1)[0]
+    logits = (
+        outputs["logit_scale"]
+        * outputs["image_features"]
+        @ outputs["text_features"].t()
+    ).softmax(dim=-1)[0]
 
 print({label: f"{prob:.2%}" for label, prob in zip(labels, logits)})
 ```
-
 
 ## Datasets
 
@@ -69,6 +75,7 @@ The following datasets are used as examples in our evaluations:
 |------|---------|--------------|
 | Medical Diagnosis | [SIIM-ACR](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/Ect9muVKw85PpJSDga-JNnUBGeDx4Cjs6ior8Gk0itwZpQ?e=JbKPmk) |
 | Cross-Modal Retrieval | [QUILT-1M](https://quilt1m.github.io/) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/Ed09CqyaQ5hMsqeJv318lOgBF7rRF8Pg0cgLRG6OdwOH4A?e=ksLxVs) |
+| Cross-Modal Retrieval | [PMC-9K](https://huggingface.co/datasets/JerrryNie/pmc9k) | [Download](https://huggingface.co/datasets/JerrryNie/pmc9k) |
 | Visual Question Answering | [SLAKE](https://www.med-vqa.com/slake/) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/ESemI-UyVURGnb5i6YddAm8BWf7PLqxQnao95uiaB81f9w?e=hyFOzR) |
 | Medical Report Generation | [IU X-Ray](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university) | [Download](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university/data) |
 | Pathology WSI Analysis | [BRACS-3](https://www.bracs.icar.cnr.it/) | [Download](https://www.bracs.icar.cnr.it/) |
@@ -100,12 +107,38 @@ python linear_probing.py
 
 ### 2. Cross-Modal Retrieval
 
+ConceptCLIP supports cross-modal retrieval evaluation on both **QUILT-1M** and **PMC-9K**.
+
+#### Option A: QUILT-1M
+
 Using QUILT-1M dataset (requires one GPU with 24GB memory):
 
 ```bash
 # Extract the downloaded dataset to this directory
 # ./downstream_evaluation/cross_modal_retrieval/data/images/002_Quilt1M
 
+cd downstream_evaluation/cross_modal_retrieval
+python retrieval.py
+````
+
+#### Option B: PMC-9K
+
+PMC-9K is also available as a retrieval benchmark on Hugging Face.
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("JerrryNie/pmc9k")
+print(dataset)
+```
+
+> **Important**
+> The Hugging Face repository mainly provides metadata and benchmark artifacts, rather than a ready-to-use fully reconstructed image-text paired dataset.
+>
+> To build the complete image-text paired dataset for retrieval evaluation, you should follow a reconstruction workflow similar to the pre-training data pipeline: use the released metadata to locate or recover the corresponding upstream images, then organize the image-text pairs into the format expected by the evaluation code.
+
+After preparing the dataset, place it under the directory expected by the retrieval pipeline and run:
+
+```bash
 cd downstream_evaluation/cross_modal_retrieval
 python retrieval.py
 ```
