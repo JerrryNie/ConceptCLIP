@@ -1,23 +1,67 @@
-# ConceptCLIP: An Explainable Biomedical Foundation Model via Large-Scale Concept-Enhanced Vision-Language Pre-training
+# [Nature Biomedical Engineering 2026] An Explainable Biomedical Foundation Model via Large-Scale Concept-Enhanced Vision-Language Pre-training
 
 <div align="center">
-  <img src="logo.png" alt="ConceptCLIP Logo" width="200">
+  <img src="logo.png" alt="ConceptCLIP Logo" width="180">
 </div>
+
+<div align="center">
+
+[![Paper](https://img.shields.io/badge/Paper-Nature%20Biomedical%20Engineering-1f6feb?style=for-the-badge)](https://www.nature.com/articles/s41551-026-01764-x)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.15579-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.15579)
+[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Model-ConceptCLIP-f9d423?style=for-the-badge)](https://huggingface.co/JerrryNie/ConceptCLIP)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Dataset-MedConcept--23M-ffb347?style=for-the-badge)](https://huggingface.co/datasets/JerrryNie/MedConcept-23M)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Dataset-PMC--9K-7fbf7f?style=for-the-badge)](https://huggingface.co/datasets/JerrryNie/pmc9k)
+
+</div>
+
+---
+
+**ConceptCLIP** is an explainable biomedical foundation model for vision-language learning, designed to improve both **general-purpose medical image understanding** and **interpretability** through large-scale concept-enhanced pre-training.
+
+It is built on large-scale biomedical image-text-concept supervision and supports a wide range of downstream tasks, including:
+
+- **Medical image diagnosis**
+- **Cross-modal retrieval**
+- **Visual question answering**
+- **Medical report generation**
+- **Pathology whole-slide image analysis**
+- **Medical concept annotation**
+- **Inherently interpretable modeling**
+
+## News
+
+- **2026.** Our paper has been formally published in **Nature Biomedical Engineering**.
+- **2025.** ConceptCLIP preprint released on arXiv.
+- **2025.** Pretrained model and datasets released on Hugging Face.
 
 ## Overview
 
-**ConceptCLIP** is an explainable biomedical foundation model that enhances vision-language pre-training with medical concepts. The model can:
-- Process multiple medical image types (X-rays, MRIs, pathology slides, etc.)
-- Provide explainable results through medical concept annotation and interpretable model
-- Support various downstream tasks like diagnosis, retrieval, and question answering
+ConceptCLIP introduces a concept-enhanced biomedical vision-language pre-training framework that explicitly incorporates medical concepts into representation learning. Compared with conventional image-text pre-training, ConceptCLIP improves biomedical generalization and interpretability by leveraging concept-aware supervision at scale.
+
+### Key features
+
+- **Large-scale concept-enhanced pre-training** on biomedical image-text-concept triplets
+- **Improved explainability** through concept-based interpretation
+- **Broad modality coverage**, including radiology, pathology, and other biomedical images
+- **Strong transferability** across diverse downstream biomedical tasks
+
+## Resources
+
+- **Published paper:** https://www.nature.com/articles/s41551-026-01764-x
+- **arXiv preprint:** https://arxiv.org/abs/2501.15579
+- **Model checkpoint:** https://huggingface.co/JerrryNie/ConceptCLIP
+- **Pre-training dataset (MedConcept-23M):** https://huggingface.co/datasets/JerrryNie/MedConcept-23M
+- **Retrieval benchmark (PMC-9K):** https://huggingface.co/datasets/JerrryNie/pmc9k
+
 
 ## Quick Start
 
 ### Installation
 
 ```bash
-# Download the repository
-cd ConceptCLIP_Full
+# Clone the repository
+git clone https://github.com/JerrryNie/ConceptCLIP.git
+cd ConceptCLIP
 
 # Install requirements
 pip install -r requirements.txt
@@ -25,10 +69,10 @@ pip install -r requirements.txt
 
 ### Access Pre-trained Model from Hugging Face
 
-ConceptCLIP is available on Hugging Face as `JerrryNie/ConceptCLIP`.
+ConceptCLIP is available on Hugging Face as [`JerrryNie/ConceptCLIP`](https://huggingface.co/JerrryNie/ConceptCLIP).
 
 > **Note**
-> The Hugging Face repository uses gated access. Please request access on the model page first, then load the model directly with `transformers`.
+> The Hugging Face repository uses gated access. Please request access on the model page and authenticate with Hugging Face before loading the model.
 
 ### Using Pre-trained Model
 
@@ -40,6 +84,10 @@ from PIL import Image
 # Load model and processor directly from Hugging Face
 model = AutoModel.from_pretrained("JerrryNie/ConceptCLIP", trust_remote_code=True)
 processor = AutoProcessor.from_pretrained("JerrryNie/ConceptCLIP", trust_remote_code=True)
+
+# Select device
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = model.to(device).eval()
 
 # Prepare inputs
 image = Image.open("example_data/chest_X-ray.jpg").convert("RGB")
@@ -53,7 +101,7 @@ inputs = processor(
     return_tensors="pt",
     padding=True,
     truncation=True
-).to(model.device)
+).to(device)
 
 # Get predictions
 with torch.no_grad():
@@ -69,7 +117,7 @@ print({label: f"{prob:.2%}" for label, prob in zip(labels, logits)})
 
 ## Datasets
 
-The following datasets are used as examples in our evaluations:
+The repository provides evaluation pipelines for representative public benchmarks used to reproduce or demonstrate different ConceptCLIP capabilities. The table below is **not intended to be an exhaustive list of all datasets evaluated in the paper**.
 
 | Task | Dataset | Download Link |
 |------|---------|--------------|
@@ -88,7 +136,7 @@ After downloading, extract the datasets to their respective directories as menti
 
 ### 1. Medical Image Diagnosis
 
-Using SIIM-ACR pneumothorax dataset (requires one GPU with 24GB memory):
+Using the SIIM-ACR pneumothorax dataset (requires one GPU with 24GB memory):
 
 ```bash
 # Extract the downloaded dataset to this directory
@@ -111,7 +159,7 @@ ConceptCLIP supports cross-modal retrieval evaluation on both **QUILT-1M** and *
 
 #### Option A: QUILT-1M
 
-Using QUILT-1M dataset (requires one GPU with 24GB memory):
+Using the QUILT-1M dataset (requires one GPU with 24GB memory):
 
 ```bash
 # Extract the downloaded dataset to this directory
@@ -119,7 +167,7 @@ Using QUILT-1M dataset (requires one GPU with 24GB memory):
 
 cd downstream_evaluation/cross_modal_retrieval
 python retrieval.py
-````
+```
 
 #### Option B: PMC-9K
 
@@ -127,14 +175,15 @@ PMC-9K is also available as a retrieval benchmark on Hugging Face.
 
 ```python
 from datasets import load_dataset
+
 dataset = load_dataset("JerrryNie/pmc9k")
 print(dataset)
 ```
 
 > **Important**
-> The Hugging Face repository mainly provides metadata and benchmark artifacts, rather than a ready-to-use fully reconstructed image-text paired dataset.
+> The Hugging Face repository mainly provides metadata and benchmark artifacts rather than a ready-to-use, fully reconstructed image-text paired dataset.
 >
-> To build the complete image-text paired dataset for retrieval evaluation, you should follow a reconstruction workflow similar to the pre-training data pipeline: use the released metadata to locate or recover the corresponding upstream images, then organize the image-text pairs into the format expected by the evaluation code.
+> To build the complete image-text paired dataset for retrieval evaluation, follow a reconstruction workflow similar to the pre-training data pipeline: use the released metadata to locate or recover the corresponding upstream images, then organize the image-text pairs into the format expected by the evaluation code.
 
 After preparing the dataset, place it under the directory expected by the retrieval pipeline and run:
 
@@ -145,7 +194,7 @@ python retrieval.py
 
 ### 3. Visual Question Answering
 
-Using SLAKE dataset (requires one GPU with 24GB memory):
+Using the SLAKE dataset (requires one GPU with 24GB memory):
 
 ```bash
 # Extract the downloaded dataset to this directory
@@ -166,77 +215,87 @@ For the following tasks, refer to their respective README files for detailed ins
 
 ## Pre-training Details
 
-To train ConceptCLIP from scratch (requires 6 nodes × 8 H800 GPUs), you must first download the full metadata, fetch the original images, and prepare the data for efficient loading.
+To train ConceptCLIP from scratch (requires 6 nodes × 8 H800 GPUs), first prepare the MedConcept-23M metadata, reconstruct the corresponding source images, and convert the metadata into the format expected by the training pipeline.
 
-### 1\. Data Preparation
+### 1. Data Preparation
 
-**Step A: Download Full Metadata**
-We provide the full metadata (**MedConcept-23M**, \~44.9 GB) containing 23 million (image-path, text, and concept) triplets on Hugging Face. Download it to your data directory:
+**Step A: Request access and download MedConcept-23M metadata**
+
+We release the **MedConcept-23M** metadata and associated processed artifacts on Hugging Face. The released metadata is approximately **44.9 GB** and is associated with roughly 23 million biomedical image-text-concept triplets used for ConceptCLIP pre-training.
+
+> **Access note**
+> MedConcept-23M uses gated access on Hugging Face. Please request access to [`JerrryNie/MedConcept-23M`](https://huggingface.co/datasets/JerrryNie/MedConcept-23M) and authenticate before downloading.
 
 ```bash
 # Directory for pre-training data
 mkdir -p pre_training/src/pretraining_data
 
 # Install Hugging Face CLI if needed
-pip install -U "huggingface_hub[cli]"
+pip install -U huggingface_hub
 
-# Download the dataset
-huggingface-cli download --repo-type dataset JerrryNie/MedConcept-23M medconcept_23m.jsonl --local-dir pre_training/src/pretraining_data
+# Authenticate if needed
+hf auth login
+
+# Download the dataset metadata
+hf download \
+  --repo-type dataset \
+  JerrryNie/MedConcept-23M \
+  medconcept_23m.jsonl \
+  --local-dir pre_training/src/pretraining_data
 ```
 
-**Step B: Download Images**
-The metadata file contains references to images hosted in the PMC Open Access subset. You must download and extract these images to your local storage.
+**Step B: Reconstruct source images**
 
-We provide a script `download_pmc_images.py` to automate this process. This script reads the metadata, fetches the corresponding packages from NCBI, and extracts the necessary images.
+The released metadata contains references to source images from the **PubMed Central Open Access (PMC-OA)** collection. The upstream images should be downloaded/reconstructed locally rather than assumed to be bundled with the metadata release.
+
+We provide `download_pmc_images.py` to automate this process. The script reads the metadata, fetches the corresponding packages from NCBI/PMC, and extracts the required images.
 
 ```bash
-# Run the download script
 # --input: Path to the metadata file downloaded in Step A
-# --output: Directory where images will be saved (e.g., pre_training/src/pretraining_images)
+# --output: Directory where images will be saved
 
 python pre_training/scripts/download_pmc_images.py \
   --input pre_training/src/pretraining_data/medconcept_23m.jsonl \
   --output pre_training/src/pretraining_images
 ```
 
-*Note: This process may take a significant amount of time depending on your internet connection.*
+> Depending on network conditions and local storage, reconstructing the full image collection can take substantial time and disk space. Users are responsible for complying with applicable upstream data terms and institutional policies.
 
 **Step C: Minimize Metadata**
-To optimize memory usage during data loading, convert the full dataset into a minimized format (keeping only captions, image paths, and concept indices). We provide a script for this conversion:
+
+To reduce memory overhead during data loading, convert the full metadata into a minimized format that retains the fields required by the training code, such as captions, image paths, and concept indices.
 
 ```bash
-# Run the minimization script
 # Input: The file downloaded in Step A
-# Output: Will be saved to pre_training/src/pretraining_data/medconcept_23m_minimized.jsonl
+# Output: pre_training/src/pretraining_data/medconcept_23m_minimized.jsonl
 
 python pre_training/scripts/convert_to_minimized_meta.py \
   --input_path pre_training/src/pretraining_data/medconcept_23m.jsonl \
   --output_dir pre_training/src/pretraining_data
 ```
 
-### 2\. Running Pre-training
+### 2. Running Pre-training
 
-Once the data is downloaded and minimized, you can launch the distributed training scripts. Ensure the scripts point to the new `_minimized.jsonl` file and your image directory.
+Once the data is downloaded/reconstructed and the metadata is minimized, launch the distributed training scripts. Ensure that the scripts point to the correct `_minimized.jsonl` file and local image directory.
 
 ```bash
-# First stage (without RC-Align loss)
+# First stage: global image-text alignment
 cd pre_training
 scripts/pretraining_first_stage_23M_multinodes_slurm.sh
 
-# Second stage (with RC-Align loss)
+# Second stage: add region-concept alignment
 scripts/pretraining_second_stage_23M_multinodes_slurm.sh
 ```
 
-*Note: A smaller sample file is available in [`pretraining_meta_file_sample.jsonl`](./pre_training/src/pretraining_sample_data/pretraining_meta_file_sample.jsonl) for testing the pipeline without downloading the full dataset.*
-
+> A smaller sample file is available in [`pretraining_meta_file_sample.jsonl`](./pre_training/src/pretraining_sample_data/pretraining_meta_file_sample.jsonl) for testing the pipeline without downloading the full dataset.
 
 ## Data Decontamination / Duplication Check
 
-It is critical to confirm that there is no data leakage (image overlap) between the pre-training dataset and the downstream evaluation datasets.
+It is critical to check for image overlap between the pre-training data and downstream evaluation datasets when reproducing the experiments or constructing new evaluation splits.
 
-We provide two utility scripts in the `other_scripts/` directory to help you perform this check using perceptual hashing (pHash).
+We provide two utility scripts in the `other_scripts/` directory to help perform this check using perceptual hashing (pHash).
 
-### 1\. Install Requirements
+### 1. Install Requirements
 
 The scripts require `ImageHash` and `tqdm`.
 
@@ -244,62 +303,89 @@ The scripts require `ImageHash` and `tqdm`.
 pip install ImageHash tqdm
 ```
 
-### 2\. Workflow
+### 2. Workflow
 
-The process involves generating hashes for your datasets and then comparing them.
+The process involves generating hashes for the datasets and then comparing them.
 
 #### Step A: Generate Pre-training Hashes
 
-1.  Open `other_scripts/generate_hashes.py`.
-2.  Edit the **Configuration** section to point to your pre-training data:
+1. Open `other_scripts/generate_hashes.py`.
+2. Edit the **Configuration** section to point to your pre-training data:
+
     ```python
     META_FILE_PATH = "path/to/medconcept_23m.jsonl"
     IMAGE_ROOT_DIR = "path/to/pretraining_images_folder"
     OUTPUT_HASH_MAP_FILE = "pretraining_hashes.csv"
     ```
-3.  Run the script:
+
+3. Run the script:
+
     ```bash
     python other_scripts/generate_hashes.py
     ```
 
 #### Step B: Generate Evaluation Data Hashes
 
-1.  Ensure your evaluation data has a corresponding metadata file in JSONL format (entries must contain an `"image"` key with the relative path).
-2.  Open `other_scripts/generate_hashes.py` again.
-3.  Update the **Configuration** section to point to your evaluation data:
+1. Ensure your evaluation data has a corresponding metadata file in JSONL format (entries must contain an `"image"` key with the relative path).
+2. Open `other_scripts/generate_hashes.py` again.
+3. Update the **Configuration** section to point to your evaluation data:
+
     ```python
     META_FILE_PATH = "path/to/evaluation_dataset.jsonl"
     IMAGE_ROOT_DIR = "path/to/evaluation_images_folder"
     OUTPUT_HASH_MAP_FILE = "evaluation_hashes.csv"
     ```
-4.  Run the script:
+
+4. Run the script:
+
     ```bash
     python other_scripts/generate_hashes.py
     ```
 
 #### Step C: Check for Duplicates
 
-Use the `other_scripts/check_duplicates.py` script to compare the two CSV files generated in the previous steps.
+Use `other_scripts/check_duplicates.py` to compare the two CSV files generated in the previous steps.
 
 ```bash
-python other_scripts/check_duplicates.py pretraining_hashes.csv evaluation_hashes.csv --output duplicates_report.csv
+python other_scripts/check_duplicates.py \
+  pretraining_hashes.csv \
+  evaluation_hashes.csv \
+  --output duplicates_report.csv
 ```
 
 **Output:**
 
-  - The script will print the total number of overlapping images found.
-  - If duplicates are found, a detailed report is saved to `duplicates_report.csv` (or the file specified by `--output`).
-  - Each row in the report contains the shared `Hash`, the `Evaluation_Image_Path`, and the corresponding `Pretraining_Image_Path`.
+- The script prints the total number of overlapping images found.
+- If duplicates are found, a detailed report is saved to `duplicates_report.csv` (or the file specified by `--output`).
+- Each row in the report contains the shared `Hash`, the `Evaluation_Image_Path`, and the corresponding `Pretraining_Image_Path`.
+
+## Responsible Use and Limitations
+
+ConceptCLIP and the associated datasets are released for **research, benchmarking, education, and responsible model development**.
+
+- ConceptCLIP is **not a medical device** and should not be used as the sole basis for diagnosis, treatment, triage, or other clinical decisions.
+- Benchmark performance does not by itself establish clinical validity. Any real-world use requires task-specific validation, appropriate human oversight, and compliance with local institutional and regulatory requirements.
+- Concept-level explanations and region-concept correspondences can improve interpretability, but they do **not** guarantee causal correctness and may still reflect spurious visual correlations or dataset bias.
+- Performance may vary across institutions, scanners, acquisition protocols, patient populations, disease prevalence, and imaging modalities.
+- When reconstructing source-linked datasets, users are responsible for preserving provenance and complying with applicable upstream terms, licenses, and data-governance requirements.
 
 ## Citation
 
-If you find ConceptCLIP useful in your research, please cite our paper:
+If you find ConceptCLIP useful in your research, please cite the **published Nature Biomedical Engineering paper**. The author order below follows the online journal version.
+
+**Nature-style citation:**
+
+> Nie, Y., He, S., Bie, Y. *et al.* An explainable biomedical foundation model via large-scale concept-enhanced vision-language pre-training. *Nat. Biomed. Eng.* https://doi.org/10.1038/s41551-026-01764-x (2026).
 
 ```bibtex
-@article{nie2025conceptclip,
-  title={An Explainable Biomedical Foundation Model via Large-Scale Concept-Enhanced Vision-Language Pre-training},
+@article{nie2026conceptclip,
+  title={An explainable biomedical foundation model via large-scale concept-enhanced vision-language pre-training},
   author={Nie, Yuxiang and He, Sunan and Bie, Yequan and Wang, Yihui and Chen, Zhixuan and Yang, Shu and Cai, Zhiyuan and Wang, Hongmei and Wang, Xi and Luo, Luyang and Wu, Mingxiang and Wu, Xian and Chan, Ronald Cheong Kin and Lau, Yuk Ming and Zheng, Yefeng and Rajpurkar, Pranav and Chen, Hao},
-  journal={arXiv preprint arXiv:2501.15579},
-  year={2025},
-  doi={10.48550/arXiv.2501.15579}
+  journal={Nature Biomedical Engineering},
+  year={2026},
+  doi={10.1038/s41551-026-01764-x},
+  url={https://doi.org/10.1038/s41551-026-01764-x}
 }
+```
+
+The earlier preprint is available at [arXiv:2501.15579](https://arxiv.org/abs/2501.15579), but please cite the journal version whenever possible.
