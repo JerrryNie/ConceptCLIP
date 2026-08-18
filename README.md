@@ -380,7 +380,7 @@ If you find ConceptCLIP useful in your research, please cite the **published Nat
 ```bibtex
 @article{nie2026conceptclip,
   title={An explainable biomedical foundation model via large-scale concept-enhanced vision-language pre-training},
-  author={Nie, Yuxiang and He, Sunan and Bie, Yequan and Wang, Yihui and Chen, Zhixuan and Yang, Shu and Cai, Zhiyuan and Wang, Hongmei and Wang, Xi and Luo, Luyang and Wu, Mingxiang and Wu, Xian and Chan, Ronald Cheong Kin and Lau, Yuk Ming and Zheng, Yefeng and Rajpurkar, Pranav and Chen, Hao},
+  author={Nie, Yuxiang and He, Sunan and Bie, Yequan and Wang, Yihui and Chen, Zhixuan and Yang, Shu and Cai, Zhiyuan and Wu, Linshan and Wang, Hongmei and Wang, Xi and Cheng, Ngai Shing and Luo, Luyang and Wu, Mingxiang and Jin, Haibo and Wu, Xian and Chan, Ronald Cheong Kin and Lau, Yuk Ming and Zhang, Zhengyu and Xiao, Sushan and Yang, Can and Zhao, Yinghua and Duan, Xiaohui and Zhang, Li and Liang, Li and Zheng, Yefeng and Rajpurkar, Pranav and Chen, Hao},
   journal={Nature Biomedical Engineering},
   year={2026},
   doi={10.1038/s41551-026-01764-x},
