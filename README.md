@@ -50,8 +50,8 @@ ConceptCLIP introduces a concept-enhanced biomedical vision-language pre-trainin
 - **Published paper:** https://www.nature.com/articles/s41551-026-01764-x
 - **arXiv preprint:** https://arxiv.org/abs/2501.15579
 - **Model checkpoint:** https://huggingface.co/JerrryNie/ConceptCLIP
-- **Pre-training dataset (MedConcept-23M):** https://huggingface.co/datasets/JerrryNie/MedConcept-23M
-- **Retrieval benchmark (PMC-9K):** https://huggingface.co/datasets/JerrryNie/pmc9k
+- **Pre-training metadata (MedConcept-23M):** https://huggingface.co/datasets/JerrryNie/MedConcept-23M
+- **Retrieval benchmark metadata (PMC-9K):** https://huggingface.co/datasets/JerrryNie/pmc9k
 
 
 ## Quick Start
@@ -62,10 +62,9 @@ ConceptCLIP introduces a concept-enhanced biomedical vision-language pre-trainin
 # Clone the repository
 git clone https://github.com/JerrryNie/ConceptCLIP.git
 cd ConceptCLIP
-
-# Install requirements
-pip install -r requirements.txt
 ```
+
+For model inference, use the supported library versions listed in the [official ConceptCLIP model card](https://huggingface.co/JerrryNie/ConceptCLIP#how-to-get-started-with-the-model). Downstream tasks have additional dependencies; consult their task instructions below. There is no repository-wide `requirements.txt`.
 
 ### Access Pre-trained Model from Hugging Face
 
@@ -90,7 +89,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 model = model.to(device).eval()
 
 # Prepare inputs
-image = Image.open("example_data/chest_X-ray.jpg").convert("RGB")
+# Replace with an image you have obtained from an authorized source.
+image = Image.open("path/to/your/image.jpg").convert("RGB")
 labels = ["chest X-ray", "brain MRI", "skin lesion"]
 texts = [f"a medical image of {label}" for label in labels]
 
@@ -119,18 +119,24 @@ print({label: f"{prob:.2%}" for label, prob in zip(labels, logits)})
 
 The repository provides evaluation pipelines for representative public benchmarks used to reproduce or demonstrate different ConceptCLIP capabilities. The table below is **not intended to be an exhaustive list of all datasets evaluated in the paper**.
 
-| Task | Dataset | Download Link |
-|------|---------|--------------|
-| Medical Diagnosis | [SIIM-ACR](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/Ect9muVKw85PpJSDga-JNnUBGeDx4Cjs6ior8Gk0itwZpQ?e=JbKPmk) |
-| Cross-Modal Retrieval | [QUILT-1M](https://quilt1m.github.io/) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/Ed09CqyaQ5hMsqeJv318lOgBF7rRF8Pg0cgLRG6OdwOH4A?e=ksLxVs) |
-| Cross-Modal Retrieval | [PMC-9K](https://huggingface.co/datasets/JerrryNie/pmc9k) | [Download](https://huggingface.co/datasets/JerrryNie/pmc9k) |
-| Visual Question Answering | [SLAKE](https://www.med-vqa.com/slake/) | [Download](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ynieae_connect_ust_hk/ESemI-UyVURGnb5i6YddAm8BWf7PLqxQnao95uiaB81f9w?e=hyFOzR) |
-| Medical Report Generation | [IU X-Ray](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university) | [Download](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university/data) |
-| Pathology WSI Analysis | [BRACS-3](https://www.bracs.icar.cnr.it/) | [Download](https://www.bracs.icar.cnr.it/) |
-| Medical Concept Annotation | [Derm7pt](https://derm.cs.sfu.ca/) | [Download](https://derm.cs.sfu.ca/Download.html) |
-| Inherently Interpretable Model | [WBCAtt](https://github.com/apple2373/wbcatt) | [Download](https://data.mendeley.com/datasets/snkd93bnjr/1) |
+### Data access and source terms
 
-After downloading, extract the datasets to their respective directories as mentioned in each task section below.
+Please obtain third-party datasets directly from their original providers using the links below. The previous personal OneDrive/SharePoint mirrors have been retired. Public availability does not by itself grant permission to redistribute a dataset, and the license of this code repository does not override any dataset's own terms. Complete any registration, access request, or data-use agreement required by the provider, and cite the original dataset publications.
+
+| Task | Dataset | Original source / access instructions |
+|------|---------|---------------------------------------|
+| Medical Diagnosis | SIIM-ACR | [Official Kaggle competition](https://www.kaggle.com/competitions/siim-acr-pneumothorax-segmentation). Sign in and follow the competition's data-access rules. |
+| Cross-Modal Retrieval | QUILT-1M | [Authors' project page](https://quilt1m.github.io/) and [official access instructions](https://github.com/wisdomikezogwo/quilt1m#data-quilt-1m-restricted-access). Access is restricted and subject to the authors' research-use and redistribution terms. |
+| Cross-Modal Retrieval | PMC-9K | [ConceptCLIP benchmark release](https://huggingface.co/datasets/JerrryNie/pmc9k). Request access to the metadata; obtain corresponding source images separately as described below. |
+| Visual Question Answering | SLAKE | [Official SLAKE page](https://www.med-vqa.com/slake/). Use the SLAKE 1.0 download options maintained by its authors. |
+| Medical Report Generation | IU X-Ray | [NLM Open-i](https://openi.nlm.nih.gov/) and its [official collection/download FAQ](https://openi.nlm.nih.gov/faq). Obtain the Indiana University chest X-ray images and reports from NLM. |
+| Pathology WSI Analysis | BRACS-3 | [Official BRACS download page](https://www.bracs.icar.cnr.it/download/). Register and follow the [dataset rules](https://www.bracs.icar.cnr.it/rules/); use the BRACS data for the three-class task. |
+| Medical Concept Annotation | Derm7pt | [Official download and access-request page](https://derm.cs.sfu.ca/Download.html). Complete the password request and follow the stated dataset license. |
+| Inherently Interpretable Model | WBCAtt | [Authors' annotations and preparation instructions](https://github.com/apple2373/wbcatt/tree/main/submission), together with the [original PBC images](https://data.mendeley.com/datasets/snkd93bnjr/1). Both resources are needed. |
+
+MedConcept-23M and PMC-9K are project metadata releases, not replacement download portals for upstream images. Reconstruct source-linked images from the original providers under their applicable terms.
+
+Official releases may have different layouts, file formats, or versions from the retired prepared archives. Before running a task, prepare local files to match the paths and splits expected by its loader and the supplied metadata. Preserve image identifiers and document preprocessing and dataset versions when comparing results. Downloading and extracting an upstream archive alone may not reproduce the former prepared data. If an official service is temporarily unavailable, retry later or contact its provider; for example, Open-i was displaying a maintenance notice when checked on 2026-09-28.
 
 ## Downstream Tasks
 
@@ -138,9 +144,11 @@ After downloading, extract the datasets to their respective directories as menti
 
 Using the SIIM-ACR pneumothorax dataset (requires one GPU with 24GB memory):
 
+Obtain the images from the official competition. The supplied [training metadata](./downstream_evaluation/medical_image_diagnosis/data/meta/011_SIIM-ACR_CLS_CLIP_Train.json) and [test metadata](./downstream_evaluation/medical_image_diagnosis/data/meta/011_SIIM-ACR_CLS_CLIP_Test.json) reference PNG files under `data/images/011_SIIM-ACR/Processed/train/`, relative to the task directory. If using the original DICOM images, convert them locally to PNG and match the identifiers in each annotation's `image` field. The loader uses PIL and does not read DICOM directly; the repository does not include the original DICOM-to-PNG preprocessing recipe.
+
 ```bash
-# Extract the downloaded dataset to this directory
-# ./downstream_evaluation/medical_image_diagnosis/data/images
+# Prepare images to match the supplied metadata under:
+# ./downstream_evaluation/medical_image_diagnosis/data/images/011_SIIM-ACR/Processed/train
 
 # Zero-shot evaluation
 cd downstream_evaluation/medical_image_diagnosis
@@ -161,9 +169,11 @@ ConceptCLIP supports cross-modal retrieval evaluation on both **QUILT-1M** and *
 
 Using the QUILT-1M dataset (requires one GPU with 24GB memory):
 
+Request access through the authors' official instructions. The supplied [evaluation metadata](./downstream_evaluation/cross_modal_retrieval/data/meta/quilt1m_test.jsonl) uses paths such as `002_Quilt1M/images/<filename>.jpg`, relative to `data/images/`. Match these filenames to your authorized local copy, and check that all evaluation images are present. In [retrieval.py](./downstream_evaluation/cross_modal_retrieval/retrieval.py), `Args.val_data` selects the metadata and `Args.image_dir` sets the image root.
+
 ```bash
-# Extract the downloaded dataset to this directory
-# ./downstream_evaluation/cross_modal_retrieval/data/images/002_Quilt1M
+# Arrange the source images to match the supplied metadata under:
+# ./downstream_evaluation/cross_modal_retrieval/data/images/002_Quilt1M/images
 
 cd downstream_evaluation/cross_modal_retrieval
 python retrieval.py
@@ -171,7 +181,7 @@ python retrieval.py
 
 #### Option B: PMC-9K
 
-PMC-9K is also available as a retrieval benchmark on Hugging Face.
+PMC-9K is also available as a retrieval benchmark on Hugging Face. Request access on the dataset page and authenticate with Hugging Face before loading its metadata.
 
 ```python
 from datasets import load_dataset
@@ -185,7 +195,7 @@ print(dataset)
 >
 > To build the complete image-text paired dataset for retrieval evaluation, follow a reconstruction workflow similar to the pre-training data pipeline: use the released metadata to locate or recover the corresponding upstream images, then organize the image-text pairs into the format expected by the evaluation code.
 
-After preparing the dataset, place it under the directory expected by the retrieval pipeline and run:
+Prepare a JSONL file with `image` and `caption` fields, with each image path relative to your local image root. Set `Args.val_data` and `Args.image_dir` in [retrieval.py](./downstream_evaluation/cross_modal_retrieval/retrieval.py) to your PMC-9K metadata and image root before running the command below; the defaults select QUILT-1M.
 
 ```bash
 cd downstream_evaluation/cross_modal_retrieval
@@ -196,10 +206,19 @@ python retrieval.py
 
 Using the SLAKE dataset (requires one GPU with 24GB memory):
 
-```bash
-# Extract the downloaded dataset to this directory
-# ./downstream_evaluation/visual_question_answering/data
+Download SLAKE 1.0 from the authors' page and organize it as expected by [slake.py](./downstream_evaluation/visual_question_answering/slake.py):
 
+```text
+downstream_evaluation/visual_question_answering/data/001_Slake1.0/
+├── train.json
+├── validate.json
+├── test.json
+└── imgs/
+```
+
+Keep the image paths referenced by the annotations intact, or update the path constants in `slake.py` to match your local layout.
+
+```bash
 cd downstream_evaluation/visual_question_answering
 ./train_slake_conceptclip.sh
 ```
@@ -361,7 +380,7 @@ python other_scripts/check_duplicates.py \
 
 ## Responsible Use and Limitations
 
-ConceptCLIP and the associated datasets are released for **research, benchmarking, education, and responsible model development**.
+ConceptCLIP and its project releases are intended for **research, benchmarking, education, and responsible model development**, subject to their applicable terms. Third-party datasets remain subject to their original providers' licenses and access conditions.
 
 - ConceptCLIP is **not a medical device** and should not be used as the sole basis for diagnosis, treatment, triage, or other clinical decisions.
 - Benchmark performance does not by itself establish clinical validity. Any real-world use requires task-specific validation, appropriate human oversight, and compliance with local institutional and regulatory requirements.

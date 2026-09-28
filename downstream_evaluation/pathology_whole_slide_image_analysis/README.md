@@ -1,5 +1,9 @@
 # Pathology Whole-Slide Image Analysis
 
+## Data Preparation
+
+For BRACS-3, obtain the whole-slide images from the [official BRACS download page](https://www.bracs.icar.cnr.it/download/) after registering and accepting the [dataset rules](https://www.bracs.icar.cnr.it/rules/). Use the supplied [BRACS-3 metadata](./dataset_csv/BRACS-3.csv) for this task's labels and splits. Extract features locally from the authorized source images before running the downstream model.
+
 ## Feature Extraction
 
 We follow the standard process in https://github.com/mahmoodlab/CLAM.
@@ -60,4 +64,3 @@ output
 Once you get the feature you can train an ABMIL model to conduct downstream tasks.
 
 Set the `ROOT_FEATURE` in the `scripts/train.sh` based on your feature folder and you can run the scripts to train the model.
-
