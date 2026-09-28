@@ -58,13 +58,33 @@ ConceptCLIP introduces a concept-enhanced biomedical vision-language pre-trainin
 
 ### Installation
 
+Use Python 3.10–3.12 in a fresh virtual environment. Make sure `python3` below selects that interpreter:
+
 ```bash
 # Clone the repository
 git clone https://github.com/JerrryNie/ConceptCLIP.git
 cd ConceptCLIP
+
+# Create and activate an isolated environment (Linux/macOS)
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+
+# For CUDA/ROCm, install the matching PyTorch build here first (see below).
+# Install core inference dependencies
+python -m pip install -r requirements.txt
+python -m pip check
 ```
 
-For model inference, use the supported library versions listed in the [official ConceptCLIP model card](https://huggingface.co/JerrryNie/ConceptCLIP#how-to-get-started-with-the-model). Downstream tasks have additional dependencies; consult their task instructions below. There is no repository-wide `requirements.txt`.
+On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. For GPU inference, install a matching `torch`/`torchvision` build for your CUDA or ROCm setup using the [official PyTorch installation instructions](https://pytorch.org/get-started/locally/) before installing the requirements. The requirements allow compatible PyTorch 2.x builds from version 2.6 onward.
+
+The root [requirements.txt](./requirements.txt) covers the Hugging Face inference example below, including PyTorch, Transformers, OpenCLIP, timm, and image-processing dependencies. It pins Transformers to 4.57.6, one of the versions verified in the [official ConceptCLIP model card](https://huggingface.co/JerrryNie/ConceptCLIP#how-to-get-started-with-the-model). Check the installation without downloading model weights:
+
+```bash
+python -c "import torch, torchvision, open_clip, timm; from transformers import AutoModel, AutoProcessor; from PIL import Image; print('Core imports OK')"
+```
+
+Pre-training and downstream tasks require additional dependencies and setup described in their task sections. In particular, [medical_report_generation/requirements.txt](./downstream_evaluation/medical_report_generation/requirements.txt) is specific to report generation; use a separate environment and follow its [README](./downstream_evaluation/medical_report_generation/README.md) for that task.
 
 ### Access Pre-trained Model from Hugging Face
 
